@@ -1,0 +1,198 @@
+﻿@*@model IEnumerable<BTL_ConGa.Models.Voucher>*@
+@using BTL_ConGa.Models;
+@{
+    ViewData["Title"] = "Voucher";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<Voucher>*@
+@model List<Voucher>
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Voucher</h5>
+            <p>
+                <a class="btn btn-primary" asp-action="ThemVoucher">Thêm Voucher</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered dataTable" id="dataTable"
+                                   width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+                                   style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.TenVoucher)*@
+                                            Mã voucher
+                                        </th>
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.TenVoucher)*@
+                                            Tên Vouchar
+                                        </th>
+                                        <th>
+                                            @* @Html.DisplayNameFor(model => model.PhanTram)*@
+                                            Phần trăm
+                                        </th>
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.SoLuong)*@
+                                            Số lượng
+                                        </th>
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.NgayBatDau)*@
+                                            Ngày bắt đầu
+                                        </th>
+                                        <th>
+                                            @* @Html.DisplayNameFor(model => model.NgayKetThuc)*@
+                                            Ngày kết thúc
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MaVoucher)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TenVoucher)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.PhanTram)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.SoLuong)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NgayBatDau)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NgayKetThuc)
+                                            </td>
+                                            <td>
+                                                @{
+                                                    string url = "https://localhost:7067/admin/suavoucher?MaVoucher=" + item.MaVoucher
+                                                    + "&TenVoucher=" + item.TenVoucher
+                                                    + "&PhanTram=" + item.PhanTram
+                                                    + "&SoLuong=" + item.SoLuong
+                                                    + "&NgayBatDau=" + item.NgayBatDau.ToString("yyyy-MM-dd")
+                                                    + "&NgayKetThuc=" + item.NgayKetThuc.ToString("yyyy-MM-dd");
+                                                }
+                                                <a class="btn btn-primary" href="@url">Chỉnh sửa</a> |
+                                                <a class="btn btn-primary" onclick="document.getElementById('@item.MaVoucher').style.display='block'">Xóa</a>
+                                                <div id="@item.MaVoucher" class="w3-modal">
+
+                                                    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                                        <header class="w3-container w3-blue" style="padding:2px 16px 2px 16px; height:50px">
+                                                            <span onclick="document.getElementById('@item.MaVoucher').style.display='none'"
+                                                              class="w3-button w3-blue w3-xlarge w3-display-topright" style="height:50px">&times;</span>
+                                                            <h2>Thông báo!</h2>
+                                                        </header>
+
+                                                        <div class="" style="padding:19px">
+                                                            <h5 class="m-0 font-weight-bold text-primary">Bạn có muốn xóa Voucher: </h5>
+                                                            <div class="col-sm-12" style="padding-left:51px">
+                                                                <dl class="row">
+                                                                    <dt class="col-sm-2">
+                                                                        Mã Voucher
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.MaVoucher
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Tên Voucher
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.TenVoucher
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Phần trăm
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.PhanTram
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Số lượng
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.SoLuong
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Ngày bắt đầu
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.NgayBatDau
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Ngày kết thúc
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.NgayKetThuc
+                                                                    </dd>
+
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w3-container w3-light-grey w3-padding">
+                                                            <button class="btn btn-primary w3-right "
+                                                                onclick="document.getElementById('@item.MaVoucher').style.display='none'" style="margin-left:20px">
+                                                                Không
+                                                            </button>
+                                                            <button class="btn btn-primary w3-right"
+                                                                onclick="deleteVoucher('@item.MaVoucher')">
+                                                                Có
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    @*@Html.PagedListPager(Model, page=>Url.Action("Voucher", new{page=page}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){LiElementClasses = new List<String> {"page-item"},
+                    PageClasses = new List<String> {"page-link"}})*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function deleteVoucher(mavoucher) {
+        var url = 'https://localhost:7067/api/voucherapi?mavoucher=' + mavoucher;
+        $.ajax({
+            url: url,
+            method: 'DELETE',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Xóa không thành công")
+            },
+            success: function (response) {
+                console.log(typeof (response));
+                if (response === false) {
+                    alert("Voucher đã được sử dụng trong hóa đơn bán. KHÔNG THỂ XÓA");
+                    document.getElementById('' + mavoucher).style.display = 'none'
+                }
+                else {
+                    alert("Xóa thành công");
+                    document.getElementById('' + mavoucher).style.display = 'none'
+                    location.reload();
+                }
+            }
+        });
+    }
+</script>
+
+
+
+

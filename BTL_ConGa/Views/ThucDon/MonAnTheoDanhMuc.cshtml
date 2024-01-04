@@ -1,0 +1,357 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<MonAn>
+@inject IHttpContextAccessor HttpContextAccessor
+<head>
+    <style>
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .page-numbers {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            .page-numbers li {
+                display: inline-block;
+                margin-right: 25px;
+                font-size: 25px;
+            }
+    </style>
+
+</head>
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>ComBo</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Thực đơn</a></li>
+                    <li class="breadcrumb-item active">ComBo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<!-- Start Shop Page  -->
+<div class="shop-box-inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-sm-12 col-xs-12 shop-content-right">
+                <div class="right-product-box">
+                    <div class="product-item-filter row">
+                        <div class="col-12 col-sm-8 text-center text-sm-left">
+                            <div class="toolbar-sorter-right">
+                                <span>Sắp xếp </span>
+                                <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+                                    <option data-display="Select">---</option>
+                                    <option value="1">Phổ biến</option>
+                                    <option value="2">Giá thấp → Giá cao</option>
+                                    <option value="3">Giá Cao → Giá thấp</option>
+                                    <option value="4">Bán chạy nhất</option>
+                                </select>
+                            </div>
+                            <p>Hiển thị tất cả ... kết quả</p>
+                        </div>
+                        <div class="col-12 col-sm-4 text-center text-sm-right">
+                            <ul class="nav nav-tabs ml-auto">
+                                <li>
+                                    <a class="nav-link active" href="#grid-view" data-toggle="tab"> <i class="fa fa-th"></i> </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#list-view" data-toggle="tab"> <i class="fa fa-list-ul"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-categorie-box">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
+                                <div class="row">
+                                    @foreach (var item in Model)
+                                    {
+
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    @*<div class="type-lb">
+                                                <p class="sale">Giảm giá</p>
+                                                </div>*@
+                                                    <img src=@Url.Content("../Chicken/images/ThucDon/" + item.AnhDaiDien) class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        @*<ul>
+                                                    <li><a asp-controller="ChiTietMonAn" asp-action="ComBoBurger" data-toggle="tooltip" data-placement="right" title="Xem"><i class="fas fa-eye"></i></a></li>
+                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào danh sách yêu thích"><i class="far fa-heart"></i></a></li>
+                                                    </ul>*@
+                                                        @if (HttpContextAccessor.HttpContext.Session.GetString("UserName") != null)
+                                                        {
+                                                            <a style="cursor:pointer;" class="cart" onclick="AddToCart('@ViewBag.checkHD','@ViewBag.maHDB','@item.MaMonAn','@ViewBag.maKH')">Thêm vào giỏ hàng</a>
+                                                        }
+                                                        else
+                                                        {
+                                                            <a class="cart">Thêm vào giỏ hàng</a>
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <a asp-controller="ChiTietMonAn" asp-action="ChiTietSanPham" asp-route-mamon="@item.MaMonAn">
+                                                    <div class="why-text">
+                                                        <h4>@item.TenMonAn</h4>
+                                                        <h5>@item.DonGia</h5>
+                                                        <del id="Gia-Cu">@item.DonGia</del>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+
+                                    }
+
+                                    @*<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="products-single fix">
+                                    <div class="box-img-hover">
+                                    <div class="type-lb">
+                                    <p class="new">Mới</p>
+                                    </div>
+                                    <img src="../Chicken/images/ThucDon/ComBo/ComBoMyY.png" class="img-fluid" alt="Image">
+                                    <div class="mask-icon">
+                                    <ul>
+                                    <li><a asp-controller="ChiTietMonAn" asp-action="ComBoMyY" data-toggle="tooltip" data-placement="right" title="Mới"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào danh sách yêu thích"><i class="far fa-heart"></i></a></li>
+                                    </ul>
+                                    <a class="cart" href="#">Thêm vào giỏ hàng</a>
+                                    </div>
+                                    </div>
+                                    <a asp-controller="ChiTietMonAn" asp-action="ComBoMyY">
+                                    <div class="why-text">
+                                    <h4>ComBo Mỳ Ý</h4>
+                                    <h5>1đ</h5>
+                                    </div>
+                                    </a>
+                                    </div>
+                                    </div>*@
+
+
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="list-view">
+                                <div class="list-view-box">
+                                    <div class="row">
+                                        @foreach (var item in Model)
+                                        {
+                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                <div class="products-single fix">
+                                                    <div class="box-img-hover">
+                                                        @*<div class="type-lb">
+                                                    <p class="sale">Giảm giá</p>
+                                                    </div>*@
+                                                        <img src=@Url.Content("../Chicken/images/ThucDon/" + item.AnhDaiDien) class="img-fluid" alt="Image">
+                                                        <div class="mask-icon">
+                                                            @*<ul>
+                                                        <li><a asp-controller="ChiTietMonAn" asp-action="ComBoBurger" data-toggle="tooltip" data-placement="right" title="Xem"><i class="fas fa-eye"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào danh sách yêu thích"><i class="far fa-heart"></i></a></li>
+                                                        </ul>*@
+                                                            <a class="cart" href="#">Thêm vào giỏ hàng</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                <a asp-controller="ChiTietMonAn" asp-action="ChiTietSanPham" asp-route-mamon="@item.MaMonAn">
+                                                    <div class="why-text full-width">
+                                                        <h4>@item.TenMonAn</h4>
+                                                        <h5>@item.DonGia<del>@item.DonGia</del></h5>
+                                                        <p style="color: black">
+                                                            @item.MoTa
+                                                        </p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        }
+
+                                    </div>
+                                </div>
+                                @*<div class="list-view-box">
+                                <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                <div class="products-single fix">
+                                <div class="box-img-hover">
+                                <div class="type-lb">
+                                <p class="new">Mới</p>
+                                </div>
+                                <img src="../Chicken/images/ThucDon/ComBo/ComBoMyY.png" class="img-fluid" alt="Image">
+                                <div class="mask-icon">
+                                <ul>
+                                <li><a asp-controller="ChiTietMonAn" asp-action="ComBoMyY" data-toggle="tooltip" data-placement="right" title="Xem"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào danh sách yêu thích"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Thêm vào giỏ hàng</a>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                <a asp-controller="ChiTietMonAn" asp-action="ComBoMyY">
+                                <div class="why-text full-width">
+                                <h4>ComBo Mỳ Ý</h4>
+                                <h5> 1đ</h5>
+                                <p>
+                                Gà rán Gà rán Gà rán Gà rán Gà rán Gà rán Gà rán Gà rán Gà rán Gà rán
+                                Gà rán Gà rán Gà rán Gà rán Gà rán Gà rán
+                                </p>
+
+                                </div>
+                                </a>
+                                </div>
+                                </div>
+                                </div>*@
+
+                            </div>
+
+                        </div>
+                        <div class="pagination">
+                            <ul class="page-numbers" style="color: red;">
+                                <li><a class="page-number">@Html.PagedListPager(Model,page=>Url.Action("MonAnTheoDanhMuc",new{page=page, MaDanhMuc = ViewBag.MaDanhMuc}))</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12 sidebar-shop-left">
+                <div class="product-categori">
+                    <div class="search-product">
+                        <form action="#">
+                            <input class="form-control" placeholder="Tìm kiếm ở đây..." type="text">
+                            <button type="submit"> <i class="fa fa-search"></i> </button>
+                        </form>
+                    </div>
+
+                    @*<div class="filter-price-left">
+                    <div class="title-left">
+                    <h3>Giá</h3>
+                    </div>
+                    <div class="price-box-slider">
+                    <div id="slider-range"></div>
+                    <p>
+                    <input type="text" id="amount" readonly style="border:0; color:#fbb714; font-weight:bold;">
+                    <button class="btn hvr-hover" type="submit">Lọc</button>
+                    </p>
+                    </div>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function AddToCart(checkHD, maHDB, maMonAn, maKH) {
+
+        const currentUrl = window.location.href;
+        if (checkHD == "1") {
+            const data = {
+                SoLuong: 1,
+                MaMonAn: maMonAn,
+                MaHoaDon: maHDB
+            };
+
+            //window.location.replace("https://localhost:7067/TaiKhoan/DangNhap");
+            fetch('https://localhost:7067/api/GioHangAPI/invoiceDetailExsits', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu đăng kí thành công, chuyển hướng đến trang "Thank you"
+                        alert("Thêm giỏ hàng thành công")
+                    } else {
+                        //Trường hợp đã có sản phẩm trong giỏ hàng
+                        fetch('https://localhost:7067/api/GioHangAPI/' + maHDB + '/' + maMonAn + '/1', {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                        })
+                            .then(response => {
+                                alert("Thêm giỏ hàng thành công iuiu");
+                                console.log(response);
+                                // Xử lý dữ liệu trả về nếu có
+                            })
+                            .catch(error => {
+                                console.log(error);
+                            });
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                });
+        }
+        if (checkHD == "0") {
+            const data = {
+                MaHDB: maHDB,
+                NgayTao: "2022-04-07T10:20:30",
+                TongTien: 0,
+                TrangThaiThanhToan: "Chưa thanh toán",
+                DiaChiGiaoHang: "",
+                SoDienThoai: "",
+                NguoiNhan: "",
+                GhiChu: "",
+                TinhTrangDonHang: "Thêm giỏ hàng",
+                MaVoucher: "",
+                IDKhachHang: maKH,
+                MaNhanVien: "NV00",
+                MaMonAn: maMonAn,
+                SoLuong: 1
+            };
+
+            //window.location.replace("https://localhost:7067/TaiKhoan/DangNhap");
+            fetch('https://localhost:7067/api/GioHangAPI/invoiceDetail', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu đăng kí thành công, chuyển hướng đến trang "Thank you"
+                        alert("Thêm giỏ hàng thành công");
+                        window.location.href = currentUrl;
+                    } else {
+                        alert('Món ăn này đã có trong giỏ hàng');
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                });
+        }
+    }
+</script>
+
+
+
+
+

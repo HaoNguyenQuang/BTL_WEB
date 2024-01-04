@@ -1,0 +1,154 @@
+﻿@*@model IEnumerable<BTL_ConGa.Models.TinTuc>*@
+@using BTL_ConGa.Models;
+@{
+    ViewData["Title"] = "BaiViet";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TinTuc>*@
+@model List<TinTuc>;
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Bài viết</h5>
+            <p>
+                <a class="btn btn-primary" asp-action="ThemBaiViet" asp-route-AnhDaiDien="">Thêm bài viết</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered dataTable" id="dataTable"
+                                   width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+                                   style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Mã tin tức
+                                        </th>
+                                        <th>
+                                            Ảnh đại diện
+                                        </th>
+                                        <th>
+                                            Tiêu đề
+                                        </th>
+                                        <th>
+                                            Nội dung
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MaTinTuc)
+                                            </td>
+                                            <td>
+                                                <img src="@Url.Content("~/Chicken/images/BaiViet/"+item.AnhDaiDien)" alt="" style="width:100px; height:100px" />
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TieuDe)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NoiDung)
+                                            </td>
+                                            <td>
+                                                @{
+                                                    string url = "https://localhost:7067/admin/suabaiviet?MaTinTuc=" + item.MaTinTuc + "&AnhDaiDien=" + item.AnhDaiDien + "&TieuDe=" + item.TieuDe + "&NoiDung=" + item.NoiDung;
+                                                }
+                                                <a class="btn btn-primary" href="@url">Chỉnh sửa</a> |
+                                                <a class="btn btn-primary" onclick="document.getElementById('@item.MaTinTuc').style.display='block'">Xóa</a>
+                                                <div id="@item.MaTinTuc" class="w3-modal">
+
+                                                    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                                        <header class="w3-container w3-blue" style="padding:2px 16px 2px 16px; height:50px">
+                                                            <span onclick="document.getElementById('@item.MaTinTuc').style.display='none'"
+                                                              class="w3-button w3-blue w3-xlarge w3-display-topright" style="height:50px">&times;</span>
+                                                            <h2>Thông báo!</h2>
+                                                        </header>
+
+                                                        <div class="" style="padding:19px">
+                                                            <h5 class="m-0 font-weight-bold text-primary">Bạn có muốn xóa tin tức: </h5>
+                                                            <div class="col-sm-12" style="padding-left:51px">
+                                                                <dl class="row">
+                                                                    <dt class="col-sm-2">
+                                                                        Mã tin tức
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.MaTinTuc
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Ảnh đại diện
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        <img src="@Url.Content("~/Chicken/images/BaiViet/"+item.AnhDaiDien)" alt="" style="width:300px; height:300px" />
+
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Tiêu đề
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.TieuDe
+                                                                    </dd>
+                                                                    <dt class="col-sm-2">
+                                                                        Nội dung
+                                                                    </dt>
+                                                                    <dd class="col-sm-10">
+                                                                        @item.NoiDung
+                                                                    </dd>
+
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w3-container w3-light-grey w3-padding">
+                                                            @*<button class="w3-button w3-right w3-blue w3-border"*@
+                                                            <button class="btn btn-primary w3-right"
+                                                                onclick="document.getElementById('@item.MaTinTuc').style.display='none'" style="margin-left:20px">
+                                                                Không
+                                                            </button>
+                                                            <button class="btn btn-primary w3-right"
+                                                                onclick="deleteTinTuc('@item.MaTinTuc')">
+                                                                Có
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    @*@Html.PagedListPager(Model, page=>Url.Action("BaiViet", new{page=page}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){LiElementClasses = new List<String> {"page-item"},
+                    PageClasses = new List<String> {"page-link"}})*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function deleteTinTuc(matintuc) {
+        var url = 'https://localhost:7067/api/baivietapi?matintuc=' + matintuc;
+        $.ajax({
+            url: url,
+            method: 'DELETE',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Xóa không thành công")
+            },
+            success: function (reponse) {
+                alert("Xóa thành công");
+                document.getElementById('' + matintuc).style.display = 'none'
+                location.reload();
+            }
+        });
+    }
+</script>

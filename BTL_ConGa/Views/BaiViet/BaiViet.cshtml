@@ -1,0 +1,73 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TinTuc>
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Bài Viết</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+                    <li class="breadcrumb-item active">Bài Viết</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start Gallery  -->
+<div class="products-box">
+    <div class="container">
+
+        @*<div class="row">
+            <div class="col-lg-12">
+                <div class="special-menu text-center">
+                    <div class="button-group filter-button-group">
+                        <button class="active" data-filter="*">Tất cả</button>
+                        <button data-filter=".top-featured">Nổi bật</button>
+                        <button data-filter=".best-seller">Tin Mới</button>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+        <div class="row special-list">
+            @foreach (var item in Model)
+            {
+            <div class="col-lg-3 col-md-6 special-grid top-featured">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        @*<div class="type-lb">
+                            <p class="sale">Nổi bật</p>
+                        </div>*@
+                            <img style="width: 210px;height:198.64px;" src="@Url.Content("../Chicken/images/BaiViet/"+item.AnhDaiDien)" class="img-fluid" alt="Image">
+                        @*<div class="mask-icon">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul>
+                            <a class="cart" asp-controller="BaiViet" asp-action="ChiTietBaiViet">Xem thêm</a>
+                        </div>*@
+                    </div>
+                        <a class="cart" asp-controller="BaiViet" asp-action="ChiTietBaiViet" asp-route-matintuc="@item.MaTinTuc">
+                        <div class="why-text">
+                            <h4>@item.TieuDe</h4>
+                        </div>
+                    </a>
+                </div>                
+            </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- End Gallery  -->

@@ -1,0 +1,163 @@
+﻿<!-- Ẩn hiện mật khẩu-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Bảo mật</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Tài khoản của tôi</a></li>
+                    <li class="breadcrumb-item active">Bảo mật</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<!-- Start Contact Us  -->
+<div class="contact-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <div class="contact-form-right">
+                    <h2>ĐỔI MẬT KHẨU</h2>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="oldpassword" name="name" placeholder="Mật khẩu cũ" required data-error="Nhập mật khẩu cũ" style="">
+                                    <i class="fa-solid fa-eye" id="show-password1" style="position:absolute; top: 28%;right: 4%"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" placeholder="Mật khẩu mới" id="newpassword" class="form-control" name="name" required data-error="Nhập mật khẩu mới" style="">
+                                    <i class="fa-solid fa-eye" id="show-password2" style="position:absolute; top: 28%;right: 4%"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="acceptnewpassword" name="name" placeholder="Xác nhận mật khẩu" required data-error="Xác nhận mật khẩu mới" style="">
+                                    <i class="fa-solid fa-eye" id="show-password3" style="position:absolute; top: 28%;right: 4%"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button class="form-control" id="subject" style="background-color:red; border-radius: 20px;color:white;font-size:18px;font-weight:bold" onclick="changePassword()">ĐỔI MẬT KHẨU</button>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../Chicken/js/jquery-3.2.1.min.js"></script>
+
+<!-- Script-->
+<script>
+    //Mật khẩu cũ
+    var passField = document.querySelector('#oldpassword');
+    var btn = document.querySelector("#show-password1");
+    btn.onclick = function () {
+        if (passField.type === "password") {
+            passField.type = "text";
+            btn.className = "fa-solid fa-eye-slash"
+        }
+        else {
+            passField.type = "password";
+            btn.className = "fa-solid fa-eye"
+        }
+    }
+    //Mật khẩu mới
+    var passField1 = document.querySelector('#newpassword');
+    var btn1 = document.querySelector("#show-password2");
+    btn1.onclick = function () {
+        if (passField1.type === "password") {
+            passField1.type = "text";
+            btn1.className = "fa-solid fa-eye-slash"
+        }
+        else {
+            passField1.type = "password";
+            btn1.className = "fa-solid fa-eye"
+        }
+    }
+    //Xác nhận mới khẩu
+    var passField2 = document.querySelector('#acceptnewpassword');
+    var btn2 = document.querySelector("#show-password3");
+    btn2.onclick = function () {
+        if (passField2.type === "password") {
+            passField2.type = "text";
+            btn2.className = "fa-solid fa-eye-slash"
+        }
+        else {
+            passField2.type = "password";
+            btn2.className = "fa-solid fa-eye"
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    function changePassword() {
+        var taikhoan = '@ViewBag.Username';
+        var matkhau = '@ViewBag.Password';
+        var matkhaucu = document.getElementById("oldpassword").value;
+        var matkhaumoi = document.getElementById("newpassword").value;
+        var xacnhanmatkhaumoi = document.getElementById("acceptnewpassword").value;
+
+        let inputMatKhauCu = document.getElementById("oldpassword");
+        let inputMatKhauMoi = document.getElementById("newpassword");
+        let inputXacNhan = document.getElementById("acceptnewpassword");
+        var url = '';
+        if(matkhaucu != matkhau)
+        {
+            alert("Mật khẩu cũ chưa chính xác");
+            return;
+        }
+        else if(matkhaumoi != xacnhanmatkhaumoi)
+        {
+            alert("Mật khẩu mới chưa trùng khớp");
+            return;
+        }
+        else
+        {
+            url = 'https://localhost:7067/api/taikhoanapi/DoiMatKhau?taikhoan=' + taikhoan + '&matkhau=' + matkhaumoi;
+        }
+
+        
+        $.ajax({
+            url: url,
+            method: 'PUT',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Sửa không thành công");
+            },
+            success: function (reponse) {
+                alert("Cập nhật thành công");
+                window.location = "https://localhost:7067/TaiKhoan/DangXuat";
+                window.location = "https://localhost:7067/TaiKhoan/DangNhap";
+
+            }
+        });
+    }
+</script>

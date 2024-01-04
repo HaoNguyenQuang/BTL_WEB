@@ -1,0 +1,772 @@
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\appsettings.Development.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\appsettings.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.staticwebassets.runtime.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.exe
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.deps.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.runtimeconfig.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.pdb
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.AssemblyReference.cache
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.GeneratedMSBuildEditorConfig.editorconfig
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.AssemblyInfoInputs.cache
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.AssemblyInfo.cs
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.CoreCompileInputs.cache
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.MvcApplicationPartsAssemblyInfo.cache
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.RazorAssemblyInfo.cache
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.RazorAssemblyInfo.cs
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.BTL_ConGa.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.build.BTL_ConGa.props
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BTL_ConGa.props
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BTL_ConGa.props
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\staticwebassets.build.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\staticwebassets.development.json
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\scopedcss\bundle\BTL_ConGa.styles.css
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\scopedcss\projectbundle\BTL_ConGa.bundle.scp.css
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\refint\BTL_ConGa.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.pdb
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.genruntimeconfig.cache
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\ref\BTL_ConGa.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Humanizer.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.Build.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.Common.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.CopyComplete
+E:\ASP.NET\BTL_ConGa\BTL_ConGa\bin\Debug\net7.0\bundleconfig.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\appsettings.Development.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\appsettings.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\bundleconfig.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.staticwebassets.runtime.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.exe
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.deps.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.runtimeconfig.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.pdb
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Humanizer.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Build.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Common.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Configuration.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Frameworks.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.LibraryModel.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Packaging.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.ProjectModel.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Protocol.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Versioning.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.Convention.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.Hosting.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.Runtime.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.TypedParts.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.AssemblyReference.cache
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.AssemblyInfoInputs.cache
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.AssemblyInfo.cs
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.CoreCompileInputs.cache
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.MvcApplicationPartsAssemblyInfo.cache
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.RazorAssemblyInfo.cache
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.RazorAssemblyInfo.cs
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.BTL_ConGa.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.build.BTL_ConGa.props
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BTL_ConGa.props
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BTL_ConGa.props
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets.build.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets.development.json
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\scopedcss\bundle\BTL_ConGa.styles.css
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\scopedcss\projectbundle\BTL_ConGa.bundle.scp.css
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.CopyComplete
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\refint\BTL_ConGa.dll
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.pdb
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.genruntimeconfig.cache
+D:\Tai_Lieu_Ki_6\Lập trình web\BTL\Project\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\ref\BTL_ConGa.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\appsettings.Development.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\appsettings.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\bundleconfig.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.staticwebassets.runtime.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.exe
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.deps.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.runtimeconfig.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\BTL_ConGa.pdb
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Humanizer.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Common.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.AssemblyReference.cache
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.AssemblyInfoInputs.cache
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.AssemblyInfo.cs
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.CoreCompileInputs.cache
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.MvcApplicationPartsAssemblyInfo.cache
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.RazorAssemblyInfo.cache
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.RazorAssemblyInfo.cs
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.BTL_ConGa.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.build.BTL_ConGa.props
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BTL_ConGa.props
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BTL_ConGa.props
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets.build.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\staticwebassets.development.json
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\scopedcss\bundle\BTL_ConGa.styles.css
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\scopedcss\projectbundle\BTL_ConGa.bundle.scp.css
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.csproj.CopyComplete
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\refint\BTL_ConGa.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.pdb
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.genruntimeconfig.cache
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\ref\BTL_ConGa.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Azure.Core.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Azure.Identity.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.CodeDom.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\obj\Debug\net7.0\BTL_ConGa.MvcApplicationPartsAssemblyInfo.cs
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\JetBrains.Annotations.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\X.PagedList.dll
+E:\Tài liệu kỳ 6\Lập trình Web\BTL_ConGa (1)\BTL_ConGa\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll

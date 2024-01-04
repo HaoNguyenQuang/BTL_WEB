@@ -1,0 +1,123 @@
+﻿@model BTL_ConGa.Models.NhanVien
+
+@{
+    ViewData["Title"] = "SuaNhanVien";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h1>Sửa nhân viên</h1>
+<p>@TempData["Message"]</p>
+<h4>Nhân Viên</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="SuaNhanVien" onsubmit="return validateForm()" name="formNhanVien">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaNhanVien" />
+            <div class="form-group">
+                <label asp-for="TenNhanVien" class="control-label">Tên nhân viên</label>
+                <input asp-for="TenNhanVien" class="form-control" />
+                <span asp-validation-for="TenNhanVien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChi" class="control-label">Địa chỉ</label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgaySinh" class="control-label">Ngày sinh</label>
+                <input asp-for="NgaySinh" class="form-control" />
+                <span asp-validation-for="NgaySinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoDienThoai" class="control-label">Số điện thoại</label>
+                <input asp-for="SoDienThoai" class="form-control" />
+                <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GioiTinh" class="control-label">Giới tính</label>
+                <select asp-for="GioiTinh" asp-items="@(ViewBag.GioiTinh)" class="form-control"></select>
+                <span asp-validation-for="GioiTinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaiKhoan" class="control-label">Tài khoản</label>
+                <input asp-for="TaiKhoan" class="form-control" value="@ViewBag.TaiKhoan" readonly>
+                <span asp-validation-for="TaiKhoan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit"  value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<script>
+    function validateForm() {
+        var tenNhanVien = document.forms["formNhanVien"]["TenNhanVien"].value;
+        var diaChi = document.forms["formNhanVien"]["DiaChi"].value;
+        var ngaySinh = document.forms["formNhanVien"]["NgaySinh"].value;
+        var email = document.forms["formNhanVien"]["Email"].value;
+        var soDienThoai = document.forms["formNhanVien"]["SoDienThoai"].value;
+        var gioiTinh = document.forms["formNhanVien"]["GioiTinh"].value;
+        var taiKhoan = document.forms["formNhanVien"]["TaiKhoan"].value;
+
+        if (tenNhanVien == "") {
+            alert("Vui lòng nhập tên nhân viên");
+            return false;
+        }
+
+        if (diaChi == "") {
+            alert("Vui lòng nhập địa chỉ");
+            return false;
+        }
+
+        if (ngaySinh == "") {
+            alert("Vui lòng nhập ngày sinh");
+            return false;
+        }
+
+        if (email == "") {
+            alert("Vui lòng nhập email");
+            return false;
+        }
+
+        if (soDienThoai == "") {
+            alert("Vui lòng nhập số điện thoại");
+            return false;
+        }
+
+        if (gioiTinh == "") {
+            alert("Vui lòng chọn giới tính");
+            return false;
+        }
+
+        if (taiKhoan == "") {
+            alert("Vui lòng nhập tài khoản");
+            return false;
+        }
+        var regexPhoneNumber = /(((\+|)84)|0)(3|5|7|8|9)+([0-9]{8})\b/;
+        if (!soDienThoai.match(regexPhoneNumber)) {
+            alert("Sai định dạng số điện thoại");
+            return false;
+        }
+        
+        var regexEmail = /^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!email.match(regexEmail)) {
+            alert("Sai định dạng email");
+
+            return false;
+        }
+       
+        return true;
+        
+    }
+</script>
+

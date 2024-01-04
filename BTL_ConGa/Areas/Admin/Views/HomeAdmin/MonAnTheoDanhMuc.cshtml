@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "MonAnTheoDanhMuc";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@using BTL_ConGa.Models;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<MonAn>*@
+@model List<MonAn>;
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">@ViewBag.tendanhmuc</h5>
+            <p>
+                <a class="btn btn-primary" asp-action="Create">Thêm món ăn</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            @Html.Partial("_PartialMonAn")
+                        </div>
+                    </div>
+                    @*@Html.PagedListPager(Model, page=>Url.Action("MonAnTheoDanhMuc", new{page=page, madanhmuc=ViewBag.madanhmuc}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){LiElementClasses = new List<String> {"page-item"},
+                    PageClasses = new List<String> {"page-link"}})*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

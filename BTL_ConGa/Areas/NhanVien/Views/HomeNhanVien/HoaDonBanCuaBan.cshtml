@@ -1,0 +1,169 @@
+﻿@using BTL_ConGa.Models;
+@{
+    ViewData["Title"] = "HoaDonBanCuaBan";
+    Layout = "~/Areas/NhanVien/Views/Shared/_LayoutNhanVien.cshtml";
+    BtlWebContext db = new BtlWebContext();
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<HoaDonBan>
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Hóa đơn do bạn xác nhận</h5>
+            @*<p>
+            <a asp-action="Create">Tạo danh mục</a>
+            </p>*@
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered dataTable" id="dataTable"
+                                   width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+                                   style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Mã hóa đơn
+                                        </th>
+                                        <th>
+
+                                            Ngày tạo
+                                        </th>
+                                        <th>
+                                            Mã nhân viên
+                                        </th>
+                                        <th>
+                                            Tên nhân viên
+                                        </th>
+                                        <th>
+                                            Tên khách hàng
+                                        </th>
+                                        <th>
+                                            Ghi chú
+                                        </th>
+                                        <th>
+
+                                            Địa chỉ giao hàng
+                                        </th>
+                                        <th>
+
+                                            Số điện thoại
+                                        </th>
+
+                                        <th>
+
+                                            Người nhận
+                                        </th>
+
+                                        <th>
+                                            Tình trạng đơn hàng
+                                        </th>
+                                        <th>
+                                            Trạng thái thanh toán
+                                        </th>
+                                        <th>
+
+                                            Voucher
+                                        </th>
+                                        <th>
+                                            Tổng tiền
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MaHoaDon)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NgayTao)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MaNhanVien)
+                                            </td>
+                                            <td>
+                                                @{
+                                                    var NhanVien = db.NhanViens.Find(item.MaNhanVien);
+                                                }
+                                                @NhanVien.TenNhanVien
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NguoiNhan)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.GhiChu)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.DiaChiGiaoHang)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.SoDienThoai)
+                                            </td>
+                                            <td>
+                                                @{
+                                                    var KhachHang = db.KhachHangs.Find(item.IdkhachHang);
+                                                }
+                                                @KhachHang.TenKhachHang
+                                            </td>
+
+
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TinhTrangDonHang)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TrangThaiThanhToan)
+                                            </td>
+
+
+                                            <td>
+                                                @{
+                                                    var Voucher = db.Vouchers.Find(item.MaVoucher);
+                                                }
+                                                @Voucher.TenVoucher
+                                            </td>
+                                            <td>
+                                                @{
+                                                    var chitiethoadon = db.ChiTietHoaDonBans.Where(x => x.MaHoaDon == item.MaHoaDon).ToList();
+                                                    int slchietiethoadon = chitiethoadon.Count(), SoLuong;
+                                                    double TongTien = 0, DonGia;
+                                                    if (slchietiethoadon != 0)
+                                                    {
+                                                        foreach (var i in chitiethoadon)
+                                                        {
+                                                            var MonAn = db.MonAns.Find(i.MaMonAn);
+                                                            DonGia = MonAn.DonGia;
+                                                            SoLuong = i.SoLuong;
+                                                            TongTien += SoLuong * DonGia;
+                                                        }
+                                                    }
+                                                    if (Voucher.MaVoucher != "")
+                                                        TongTien -= TongTien * (Voucher.PhanTram * 1.0 / 100.0);
+                                                }
+                                                @TongTien
+                                            </td>
+                                            <td>
+
+                                                <a class="btn btn-primary" asp-action="ChiTietHoaDonBan" asp-route-mahoadon="@item.MaHoaDon">Chi tiết</a>
+
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    @*@Html.PagedListPager(Model, page=>Url.Action("HoaDonBan", new{page=page}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){LiElementClasses = new List<String> {"page-item"},
+                    PageClasses = new List<String> {"page-link"}})*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,250 @@
+﻿@using BTL_ConGa.Areas;
+@using BTL_ConGa.Models;
+@model List<HoaDonBan>;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "ThongKe";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@{
+    string FormatNumber(double number)
+    {
+        return number.ToString("#,##0.##", System.Globalization.CultureInfo.InvariantCulture);
+    }
+
+    //3 cái bảng ở trên
+    int sohoadonhomqua = 0, sohoadonhomnay = 0;
+    double sotienhomqua = 0, sotienhomnay = 0;
+    int sohoadonthangnay = 0;
+    double sotienthangnay = 0;
+
+    //Năm ngoái
+    int namngoai = DateTime.Today.Year - 1;
+    int[] sohoadonnamngoai = new int[13];
+    double[] sotiennamngoai = new double[13];
+    //Năm nay
+    int namnay = DateTime.Today.Year;
+    int[] sohoadonnamnay = new int[13];
+    double[] sotiennamnay = new double[13];
+
+    for (int i = 0; i <= 12; i++)
+    {
+        sohoadonnamngoai[i] = 0;
+        sohoadonnamnay[i] = 0;
+        sotiennamngoai[i] = 0;
+        sotiennamnay[i] = 0;
+    }
+
+    foreach (var item in Model)
+    {
+        if (item.NgayTao.Date == DateTime.Today && item.TinhTrangDonHang == "Đã hoàn thành")
+        {
+            // Ngày tạo của item trùng với ngày hôm nay
+            sohoadonhomnay++;
+            sotienhomnay += item.TongTien;
+        }
+        if (item.NgayTao.Date == DateTime.Today.AddDays(-1) && item.TinhTrangDonHang == "Đã hoàn thành")
+        {
+            // Ngày tạo của item trùng với ngày hôm qua
+            sohoadonhomqua++;
+            sotienhomqua += item.TongTien;
+        }
+        if (item.NgayTao.Month == DateTime.Today.Month && item.TinhTrangDonHang == "Đã hoàn thành")
+        {
+            sohoadonthangnay++;
+            sotienthangnay += item.TongTien;
+        }
+        //Năm ngoái
+        for (int i = 0; i < 12; i++)
+        {
+            if (item.NgayTao.Month == i && item.NgayTao.Year == DateTime.Today.Year - 1 && item.TinhTrangDonHang == "Đã hoàn thành")
+            {
+                sohoadonnamngoai[i]++;
+                sotiennamngoai[i] += item.TongTien;
+            }
+        }
+        //Năm nay
+        for (int i = 0; i < 12; i++)
+        {
+            if (item.NgayTao.Month == i && item.NgayTao.Year == DateTime.Today.Year && item.TinhTrangDonHang == "Đã hoàn thành")
+            {
+                sohoadonnamnay[i]++;
+                sotiennamnay[i] += item.TongTien;
+            }
+        }
+
+    }
+
+}
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Thống kê</h5>
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- Copy thêm -->
+                            <!-- 3 cái đầu tiên -->
+                            <div class="row" style="margin-bottom:25px">
+                                <div class="col-md-4 stretch-card grid-margin">
+                                    <div class="card bg-gradient-danger card-img-holder text-white">
+                                        <div class="card-body" style="height:220px;">
+                                            @*<img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">*@
+                                            <h4 class="font-weight-normal mb-3">
+                                                HÔM QUA <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                                            </h4>
+                                            <h2 class="mb-5">Số hóa đơn: @sohoadonhomqua <br />Doanh thu: @FormatNumber(sotienhomqua)</h2>
+                                            <h6 class="mb-5"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 stretch-card grid-margin">
+                                    <div class="card bg-gradient-info card-img-holder text-white">
+                                        <div class="card-body" style="height:220px;">
+                                            @*<img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">*@
+                                            <h4 class="font-weight-normal mb-3">
+                                                HÔM NAY <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                                            </h4>
+                                            <h2 class="mb-5">Số hóa đơn: @sohoadonhomnay <br />Doanh thu: @FormatNumber(sotienhomnay)</h2>
+                                            @{
+                                                double tang, giam;
+                                                tang = ((sotienhomnay - sotienhomqua) / sotienhomqua) * 100;
+                                                giam = ((sotienhomqua - sotienhomnay) / sotienhomnay) * 100;
+                                                if(tang < 0)
+                                                {
+                                                    tang = -tang;
+                                                }
+                                            }
+                                            @if (sotienhomnay >= sotienhomqua)
+                                            {
+                                                <h6 class="mb-5">Doanh thu tăng @tang % so với hôm qua</h6>
+                                            }
+                                            else
+                                            {
+                                                <h6 class="mb-5">Doanh thu giảm @tang % so với hôm qua</h6>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 stretch-card grid-margin">
+                                    <div class="card bg-gradient-success card-img-holder text-white">
+                                        <div class="card-body" style="height:220px;">
+                                            @*<img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">*@
+                                            <h4 class="font-weight-normal mb-3">
+                                                THÁNG NÀY <i class="mdi mdi-diamond mdi-24px float-right"></i>
+                                            </h4>
+                                            <h2 class="mb-5">Số hóa đơn: @sohoadonthangnay <br />Doanh thu:  @FormatNumber(sotienthangnay)</h2>
+                                            <h6 class="mb-5"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hết Copy -->
+                            <!-- Thông tin chi tiết -->
+                            <div>
+                                <table style="border: 1px solid black; border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" style="border: 1px solid black; padding: 8px;"></th>
+                                            @for (int i = 1; i <= 12; i++)
+                                            {
+                                                <th style="border: 1px solid black; padding: 8px;">Tháng @i</th>
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Năm ngoái -->
+                                        <tr>
+                                            <td rowspan="2" style="border: 1px solid black; padding: 8px;">@namngoai</td>
+                                            <td style="border: 1px solid black; padding: 8px;">Số hóa đơn</td>
+                                            @for (int i = 1; i <= 12; i++)
+                                            {
+                                                <td style="border: 1px solid black; padding: 8px;">@sohoadonnamngoai[i]</td>
+                                            }
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid black; padding: 8px;">Doanh thu</td>
+                                            @for (int i = 1; i <= 12; i++)
+                                            {
+                                                <td style="border: 1px solid black; padding: 8px;">@sotiennamngoai[i]</td>
+                                            }
+                                        </tr>
+                                        <!-- Năm nay -->
+                                        <tr>
+                                            <td rowspan="2" style="border: 1px solid black; padding: 8px;">@namnay</td>
+                                            <td style="border: 1px solid black; padding: 8px;">Số hóa đơn</td>
+                                            @for (int i = 1; i <= 12; i++)
+                                            {
+                                                <td style="border: 1px solid black; padding: 8px;">@sohoadonnamnay[i]</td>
+                                            }
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid black; padding: 8px;">Doanh thu</td>
+                                            @for (int i = 1; i <= 12; i++)
+                                            {
+                                                <td style="border: 1px solid black; padding: 8px;">@sotiennamnay[i]</td>
+                                            }
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <!-- Biểu đồ so sánh -->
+                            <canvas id="canvas"></canvas>
+                            <!-- Hết biểu đồ -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+<script>
+    const labels = ['','Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12']
+    const datanamnay = JSON.parse('@Html.Raw(Json.Serialize(sotiennamnay))');
+    const datanamngoai = JSON.parse('@Html.Raw(Json.Serialize(sotiennamngoai))');
+
+    const data = {
+        labels: labels,
+        datasets: [
+            {
+                label: 'Doanh thu' + @namnay,
+                backgroundColor: 'blue',
+                borderColor: 'blue',
+                data: datanamnay,
+                //tension: 0.5,
+            },
+            {
+                label: 'Doanh thu ' + @namngoai,
+                backgroundColor: 'red',
+                borderColor: 'red',
+                data: datanamngoai,
+                //tension: 0.5,
+            },
+        ],
+    }
+    const config = {
+        type: 'line',
+        data: data,
+    }
+
+    const canvas = document.getElementById('canvas')
+    const chart = new Chart(canvas, config)
+</script>
+
+

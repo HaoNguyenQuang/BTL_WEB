@@ -1,0 +1,340 @@
+﻿@using BTL_ConGa.Models;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "SuaAnh";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model List<Anh>
+
+
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Sửa ảnh chi tiết</h5>
+            <p>@ViewBag.mamon</p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        @{
+                            string[] maanh = new string[10];
+                            string[] tenanh = new string[10];
+                            string[] hinhanh = new string[10];
+                            int i = 0;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            maanh[i] = item.MaAnh;
+                            tenanh[i] = item.TenAnh;
+                            hinhanh[i] = item.HinhAnh;
+                            i++;
+                        }
+                        <div class="col-sm-4">
+                            <form method="Post" asp-action="SuaAnh">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Mã ảnh</label>
+                                    <input id="MaAnh1" class="form-control" disabled value="@maanh[0]" />
+                                    <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tên ảnh</label>
+                                    <input id="TenAnh1" oninput="checktenanh1()" class="form-control" value="@tenanh[0]" />
+                                    <span class="text-danger"></span>
+                                    <span id="tenanhError1" class="invalid-feedback">Tên ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Hình ảnh</label>
+                                    <input id="HinhAnh1" oninput="checkhinhanh1()" type="file" />
+                                    <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <img id="Anh1" src="@Url.Content("~/Chicken/images/ThucDon/"+ViewBag.danhmuc+"/"+hinhanh[0])" alt="" style="width:100px; height:100px" />
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="col-sm-4">
+                            <form method="Post" asp-action="SuaAnh">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Mã ảnh</label>
+                                    <input id="MaAnh2" class="form-control" disabled value="@maanh[1]" />
+                                    <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tên ảnh</label>
+                                    <input id="TenAnh2" oninput="checktenanh2()" class="form-control" value="@tenanh[1]" />
+                                    <span class="text-danger"></span>
+                                    <span id="tenanhError2" class="invalid-feedback">Tên ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Hình ảnh</label>
+                                    <input id="HinhAnh2" oninput="checkhinhanh2()" type="file" />
+                                    <span class="text-danger"></span>
+                                    <span id="hinhanhError2" class="invalid-feedback">Hình ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <img id="Anh2" src="@Url.Content("~/Chicken/images/ThucDon/"+ViewBag.danhmuc+"/"+hinhanh[1])" alt="" style="width:100px; height:100px" />
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="col-sm-4">
+                            <form method="Post" asp-action="SuaAnh">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Mã ảnh</label>
+                                    <input id="MaAnh3" class="form-control" disabled value="@maanh[2]" />
+                                    <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tên ảnh</label>
+                                    <input id="TenAnh3" oninput="checktenanh3()" class="form-control" value="@tenanh[2]" />
+                                    <span class="text-danger"></span>
+                                    <span id="tenanhError3" class="invalid-feedback">Tên ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Hình ảnh</label>
+                                    <input id="HinhAnh3" oninput="checkhinhanh3()" type="file" />
+                                    <span class="text-danger"></span>
+                                    <span id="hinhanhError3" class="invalid-feedback">Hình ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <img id="Anh3" src="@Url.Content("~/Chicken/images/ThucDon/"+ViewBag.danhmuc+"/"+hinhanh[2])" alt="" style="width:100px; height:100px" />
+                                </div>
+
+                            </form>
+                        </div>
+                        <input id="DanhMuc" value="@ViewBag.danhmuc" style="display: none;">
+                        <input id="MaMon" value="@ViewBag.mamon" style="display: none;">
+                    </div>
+                    <hr />
+                    <div class="form-group">
+                        <input onclick="SuaAnhChiTiet()" value="Save" class="btn btn-primary" />
+                        <a class="btn btn-primary" asp-action="ChiTietMonAn" asp-route-mamonan="@ViewBag.mamon">Quay lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .is-invalid {
+        border-color: #dc3545 !important;
+    }
+
+    .invalid-feedback {
+        display: none;
+        color: #dc3545;
+    }
+</style>
+
+<script>
+    function checktenanh1() {
+        var tenanh1 = document.getElementById("TenAnh1");
+        if (tenanh1.value == "") {
+            tenanh1.classList.add("is-invalid");
+            document.getElementById("tenanhError1").style.display = "block";
+            return false;
+        }
+        tenanh1.classList.remove("is-invalid");
+        document.getElementById("tenanhError1").style.display = "none";
+        return true;
+
+    }
+
+
+
+    function checkhinhanh1() {
+        var hinhanh1 = document.getElementById("HinhAnh1");
+        if (hinhanh1.value != "") {
+            //hinhanh1.classList.remove("is-invalid");
+            //document.getElementById("AnhError").style.display = "none";
+
+            var anh = hinhanh1.value.split(/[\\|/]/);
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('Anh1');
+            var danhmuc = document.getElementById('DanhMuc');
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/LuuAnhVaoFoderKhiChonAnh",
+                data: { anhchinh: anhchinh + "\\" + danhmuc.value },
+                success: function (response) {
+                    image.src = "/Chicken/images/ThucDon/" + danhmuc.value + "/" + anhchinh;
+                    console.log(image.src);
+                }
+            });
+        }
+        //return true;
+
+    }
+</script>
+
+
+<script>
+
+    function checktenanh2() {
+        var tenanh2 = document.getElementById("TenAnh2");
+        if (tenanh2.value == "") {
+            tenanh2.classList.add("is-invalid");
+            document.getElementById("tenanhError2").style.display = "block";
+            return false;
+        }
+        tenanh2.classList.remove("is-invalid");
+        document.getElementById("tenanhError2").style.display = "none";
+        return true;
+
+    }
+    function checkhinhanh2() {
+        var hinhanh2 = document.getElementById("HinhAnh2");
+        if (hinhanh2.value != "") {
+            //hinhanh1.classList.remove("is-invalid");
+            //document.getElementById("AnhError").style.display = "none";
+
+            var anh = hinhanh2.value.split(/[\\|/]/);
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('Anh2');
+            var danhmuc = document.getElementById('DanhMuc');
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/LuuAnhVaoFoderKhiChonAnh",
+                data: { anhchinh: anhchinh + "\\" + danhmuc.value },
+                success: function (response) {
+                    image.src = "/Chicken/images/ThucDon/" + danhmuc.value + "/" + anhchinh;
+                    console.log(image.src);
+                }
+            });
+        }
+        //return true;
+
+    }
+
+</script>
+
+
+<script>
+
+    function checktenanh3() {
+        var tenanh3 = document.getElementById("TenAnh3");
+        if (tenanh3.value == "") {
+            tenanh3.classList.add("is-invalid");
+            document.getElementById("tenanhError3").style.display = "block";
+            return false;
+        }
+        tenanh3.classList.remove("is-invalid");
+        document.getElementById("tenanhError3").style.display = "none";
+        return true;
+
+    }
+    function checkhinhanh3() {
+        var hinhanh3 = document.getElementById("HinhAnh3");
+        if (hinhanh3.value != "") {
+            //hinhanh1.classList.remove("is-invalid");
+            //document.getElementById("AnhError").style.display = "none";
+
+            var anh = hinhanh3.value.split(/[\\|/]/);
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('Anh3');
+            var danhmuc = document.getElementById('DanhMuc');
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/LuuAnhVaoFoderKhiChonAnh",
+                data: { anhchinh: anhchinh + "\\" + danhmuc.value },
+                success: function (response) {
+                    image.src = "/Chicken/images/ThucDon/" + danhmuc.value + "/" + anhchinh;
+                    console.log(image.src);
+                }
+            });
+        }
+        //return true;
+
+    }
+
+</script>
+
+<script type="text/javascript">
+    //Hàm thêm mới khách hàng . dùng $.ajax thwucj hiện method httpPost
+
+    function SuaAnhChiTiet() {
+
+        var mamon = document.getElementById("MaMon").value;
+
+
+
+        var maanh1 = document.getElementById("MaAnh1").value;
+        var tenanh1 = document.getElementById("TenAnh1").value;
+        var hinhanh1 = document.getElementById("Anh1");
+
+        var maanh2 = document.getElementById("MaAnh2").value;
+        var tenanh2 = document.getElementById("TenAnh2").value;
+        var hinhanh2 = document.getElementById("Anh2");
+
+        var maanh3 = document.getElementById("MaAnh3").value;
+        var tenanh3 = document.getElementById("TenAnh3").value;
+        var hinhanh3 = document.getElementById("Anh3");
+
+
+        var anh1 = hinhanh1.src.split(/[\\|/]/);
+        var anhchinh1 = anh1[anh1.length - 1];
+
+        var anh2 = hinhanh2.src.split(/[\\|/]/);
+        var anhchinh2 = anh2[anh2.length - 1];
+
+        var anh3 = hinhanh3.src.split(/[\\|/]/);
+        var anhchinh3 = anh3[anh3.length - 1];
+
+        var url = 'https://localhost:7067/api/anhapi?'
+            + 'maanh1=' + maanh1
+            + '&tenanh1=' + tenanh1
+            + '&hinhanh1=' + anhchinh1
+
+            + '&maanh2=' + maanh2
+            + '&tenanh2=' + tenanh2
+            + '&hinhanh2=' + anhchinh2
+
+            + '&maanh3=' + maanh3
+            + '&tenanh3=' + tenanh3
+            + '&hinhanh3=' + anhchinh3
+
+            + '&mamon=' + mamon;
+
+        $.ajax({
+
+            url: url,
+            method: 'PUT',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                checktenanh1();
+                checktenanh2();
+                checktenanh3();
+            },
+            success: function (reponse) {
+
+                if (checktenanh1() == true
+                    && checktenanh2() == true
+                    && checktenanh3() == true) {
+                    alert("Sửa thành công");
+                    window.location.href = 'https://localhost:7067/admin/homeadmin/chitietmonan?mamonan=' + mamon;
+                }
+                else
+                    alert("Bạn chưa nhập đầy đủ thông tin");
+
+            }
+        });
+    }
+
+
+</script>

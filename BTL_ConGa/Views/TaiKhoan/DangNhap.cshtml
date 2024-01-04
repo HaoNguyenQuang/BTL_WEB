@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.CheckLogin = false;
+}
+@model BTL_ConGa.Models.TaiKhoan
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Đăng nhập</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item active">Đăng nhập</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<div class="contact-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <div class="contact-form-right">
+                    <h2 style="text-align:center">Đăng nhập</h2>
+                    <!-- Từ đây -->
+                    @*<form id="contactForm">*@
+                        @using(Html.BeginForm("DangNhap","TaiKhoan", FormMethod.Post)){
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(x=>x.TaiKhoan1, new{@class="form-control form-control-user",placeholder="Tên đăng nhập", required="required", autofocus="autofocus",id="nameuser",name="name"})
+                                    @*<input type="text" class="form-control" id="nameuser" name="name" placeholder="Tên đăng nhập" required data-error="Nhập tên đăng nhập">*@
+
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(x=>x.MatKhau, new{@class="form-control form-control-user",id="password",type="password", placeholder="Mật khẩu", required="required", autofocus="autofocus"})
+                                    @*<input type="password" placeholder="Mật khẩu" id="password" class="form-control" name="password" required data-error="Nhập mật khẩu">*@
+                                    <i class="fa-solid fas fa-eye" id="showpassword" style="position:absolute; top: 28%;right: 4%"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label> <input style="margin-bottom:15px;" type="checkbox" id="check" name="name"> Nhớ tài khoản</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button class="form-control" id="subject" style="background-color:red; border-radius: 20px;color:white;font-size:18px;font-weight:bold" type="submit">Đăng nhập</button>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <p style="text-align:center;"><a href="#">Quên mật khẩu?</a></p>
+                                <p style="text-align:center;">Bạn chưa có tài khoản? <a asp-controller="TaiKhoan" asp-action="DangKy">Đăng ký</a></p>
+                            </div>
+
+                        </div>
+                        }
+                    @*</form>*@
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script-->
+<script>
+
+    //Ẩn hiện
+    var passField = document.querySelector('#password');
+    var btn1 = document.querySelector("#showpassword");
+    btn1.onclick = function () {
+        if (passField.type === "password") {
+            passField.type = "text";
+            btn1.className = "fa-solid fas fa-eye-slash"
+        }
+        else {
+            passField.type = "password";
+            btn1.className = "fa-solid fas fa-eye"
+        }
+    }
+
+</script>
+
+<!-- Đăng nhập -->
+
+

@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "HoSo";
+    Layout = "~/Areas/NhanVien/Views/Shared/_LayoutNhanVien.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Thông tin của bạn</h5>
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- Viết vào đây -->
+                            <!-- Cục trái -->
+                            <div class="col-md-5" style="display:inline-block; margin-left:5%; margin-right:5%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <form class="forms-sample">
+                                            @*Mã nhân viên *@
+                                            <div class="form-group">
+                                                <label for="exampleInputUsername1">Mã nhân viên</label>
+                                                <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Mã nhân viên" value="@ViewBag.IDNhanVien" readonly>
+                                            </div>
+                                            @*Tên nhân viên *@
+                                            <div class="form-group">
+                                                <label for="exampleInputUsername1">Tên nhân viên</label>
+                                                <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Tên nhân viên" value="@ViewBag.TenNhanVien" readonly>
+                                            </div>
+                                            @*Ngày sinh*@
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Ngày sinh</label>
+                                                <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Ngày sinh" value="@ViewBag.NgaySinh" readonly>
+                                            </div>
+                                            @*Email*@
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" value="@ViewBag.Email" readonly>
+                                            </div>
+                                            @*Số điện thoại*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Số điện thoại</label>
+                                                <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Số điện thoại" value="@ViewBag.SoDienThoai" readonly>
+                                            </div>
+                                            @*Địa chỉ*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Địa chỉ</label>
+                                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Địa chỉ" value="@ViewBag.DiaChi" readonly>
+                                            </div>
+                                            @*Giới tính*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Giới tính</label>
+                                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Giới tính" value="@ViewBag.GioiTinh" readonly>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cục phải -->
+                            <div class="col-md-5" style="display:inline-block;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 style="color:dodgerblue">Đổi mật khẩu</h4>
+                                        <form class="forms-sample">
+                                            @*Mật khẩu cũ *@
+                                            <div class="form-group">
+                                                <label for="exampleInputUsername1">Mật khẩu cũ</label>
+                                                <input type="password" class="form-control" id="inputMatKhauCu" placeholder="Mật khẩu cũ">
+                                                <i class="fa-solid fas fa-eye" id="showpasswordhoso1" style="position:absolute; top: 26%;right: 7%"></i>
+                                            </div>
+                                            @*Mật khẩu mới *@
+                                            <div class="form-group">
+                                                <label for="exampleInputUsername1">Mật khẩu mới</label>
+                                                <input type="password" class="form-control" id="inputMatKhauMoi" placeholder="Mật khẩu mới">
+                                                <i class="fa-solid fas fa-eye" id="showpasswordhoso2" style="position:absolute; top: 49%;right: 7%"></i>
+                                            </div>
+                                            @*Xác nhận mật khẩu mới*@
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Xác nhận mật khẩu mới</label>
+                                                <input type="password" class="form-control" id="inputXacNhanMatKhau" placeholder="Xác nhận mật khẩu mới">
+                                                <i class="fa-solid fas fa-eye" id="showpasswordhoso3" style="position:absolute; top: 72%;right: 7%"></i>
+                                            </div>
+                                            @*Button đổi mật khẩu *@
+                                            <button onclick="changePassword1()" style="background-color: #007bff;color: #fff;border: none;padding: 10px 20px;font-size: 16px;cursor: pointer;border-radius:10px">
+                                                Đổi mật khẩu
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //Mật khẩu cũ
+    var passField1 = document.querySelector('#inputMatKhauCu');
+    var btn1 = document.querySelector("#showpasswordhoso1");
+    btn1.onclick = function () {
+        if (passField1.type === "password") {
+            passField1.type = "text";
+            btn1.className = "fa-solid fas fa-eye-slash"
+        }
+        else {
+            passField1.type = "password";
+            btn1.className = "fa-solid fas fa-eye"
+        }
+    }
+    //Mật khẩu mới
+    var passField2 = document.querySelector('#inputMatKhauMoi');
+    var btn2 = document.querySelector("#showpasswordhoso2");
+    btn2.onclick = function () {
+        if (passField2.type === "password") {
+            passField2.type = "text";
+            btn2.className = "fa-solid fas fa-eye-slash"
+        }
+        else {
+            passField2.type = "password";
+            btn2.className = "fa-solid fas fa-eye"
+        }
+    }
+    //Mật khẩu cũ
+    var passField3 = document.querySelector('#inputXacNhanMatKhau');
+    var btn3 = document.querySelector("#showpasswordhoso3");
+    btn3.onclick = function () {
+        if (passField3.type === "password") {
+            passField3.type = "text";
+            btn3.className = "fa-solid fas fa-eye-slash"
+        }
+        else {
+            passField3.type = "password";
+            btn3.className = "fa-solid fas fa-eye"
+        }
+    }
+</script>
+
+
+<!-- Đổi mật khẩu -->
+<script type="text/javascript">
+    function changePassword1() {
+        var taikhoan = '@ViewBag.Username';
+        var matkhau = '@ViewBag.Password';
+        var matkhaucu = document.getElementById("inputMatKhauCu").value;
+        var matkhaumoi = document.getElementById("inputMatKhauMoi").value;
+        var xacnhanmatkhaumoi = document.getElementById("inputXacNhanMatKhau").value;
+
+        let inputMatKhauCu = document.getElementById("inputMatKhauCu");
+        let inputMatKhauMoi = document.getElementById("inputMatKhauMoi");
+        let inputXacNhan = document.getElementById("inputXacNhanMatKhau");
+        var url = '';
+        if (matkhaucu != matkhau) {
+            alert("Mật khẩu cũ chưa chính xác");
+            return;
+        }
+        else if (matkhaumoi != xacnhanmatkhaumoi) {
+            alert("Mật khẩu mới chưa trùng khớp");
+            return;
+        }
+        else {
+            url = 'https://localhost:7067/api/APINhanVien/DoiMatKhau?taikhoan=' + taikhoan + '&matkhau=' + matkhaumoi;
+        }
+
+
+        $.ajax({
+            url: url,
+            method: 'PUT',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Sửa không thành công");
+            },
+            success: function (reponse) {
+                alert("Cập nhật thành công");
+                //inputMatKhauCu.value = "";
+                //inputMatKhauMoi.value = "";
+                //inputXacNhan.value = "";
+            }
+        });
+    }
+</script>

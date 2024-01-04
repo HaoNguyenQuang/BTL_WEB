@@ -1,0 +1,237 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Freshshop - Ecommerce Bootstrap 4 HTML Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../Chicken/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../Chicken/images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Chicken/css/bootstraps.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../Chicken/css/styles1.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../Chicken/css/responsives.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../Chicken/css/custom1.css">
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="custom-select-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+                            <option>¥ JPY</option>
+                            <option>$ USD</option>
+                            <option>€ EUR</option>
+                        </select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            @if (HttpContextAccessor.HttpContext.Session.GetString("UserName") != null)
+                            {
+                                <li><a asp-controller="TaiKhoan" asp-action="TaiKhoan"><i class="fa fa-user s_color"></i>Tài Khoản của tôi</a></li>
+                            }
+                            else
+                            {
+                                <li><a asp-controller="TaiKhoan" asp-action="DangNhap"><i class="fa fa-user s_color"></i>Tài Khoản của tôi</a></li>
+                            }
+                            
+                            <li><a asp-controller="ThongTin" asp-action="DiaChiNhaHang"><i class="fas fa-location-arrow"></i>Địa điểm của chúng tôi</a></li>
+                            <li><a asp-controller="ThongTin" asp-action="LienHe"><i class="fas fa-headset"></i> Liên hệ với chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    @*<div class="login-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
+                            <option>Register Here</option>
+                            <option>Sign In</option>
+                        </select>
+                    </div>*@
+                    <div class="login-box">
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("UserName") != null)
+                        {
+                            <a asp-controller="TaiKhoan" asp-action="DangXuat" style="margin-left: 10px; color: white; font-size: 18px;">Đăng xuất</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="TaiKhoan" asp-action="DangNhap" style="color: white; font-size: 18px;"><i class="fa fa-user s_color"></i>Đăng nhập</a>
+                            <a asp-controller="TaiKhoan" asp-action="DangKy" style="margin-left: 10px; color: white; font-size: 18px;"><i class="fa fa-user s_color"></i>Đăng kí</a>
+                        }
+                    </div>
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+    <!-- Start Main Top -->
+    @await Html.PartialAsync("PatialHeader")
+    <!-- End Main Top -->
+        @RenderBody()
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/CanhGaSotCayChayLuoi.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/CanhGaSotCreamyOnion.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/CanhGaTruyenThong.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/DuiGaSotCayChayluoi.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/DuiGaSotNguVi.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/GaNuaConSotCayChayLuoi.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/GaNuaConSotCreamyOnion.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="../Chicken/images/ThucDon/MonChinh/GaNuaConSotNguVi.png" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
+    <!-- Start Footer  -->
+   @await Html.PartialAsync("PatialFooter")
+    <!-- End Footer  -->
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">
+            . &copy; 2023 <a href="#">ThewayShop</a> Design By :
+            <a href="https://html.design/">html design</a>
+        </p>
+    </div>
+   
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none; height:0px">&#9996;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="../Chicken/js/jquery-3.2.1.min.js"></script>
+    <script src="../Chicken/js/popper.min.js"></script>
+    <script src="../Chicken/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="../Chicken/js/jquery.superslides.min.js"></script>
+    <script src="../Chicken/js/bootstrap-select.js"></script>
+    <script src="../Chicken/js/inewsticker.js"></script>
+    <script src="../Chicken/js/bootsnav.js."></script>
+    <script src="../Chicken/js/images-loded.min.js"></script>
+    <script src="../Chicken/js/isotope.min.js"></script>
+    <script src="../Chicken/js/owl.carousel.min.js"></script>
+    <script src="../Chicken/js/baguetteBox.min.js"></script>
+    <script src="../Chicken/js/form-validator.min.js"></script>
+    <script src="../Chicken/js/contact-form-script.js"></script>
+    <script src="../Chicken/js/custom.js"></script>
+    <script src="../Chicken/js/jquery-ui.js"></script>
+    <script src="../Chicken/js/jquery.nicescroll.min.js"></script>
+</body>
+
+</html>

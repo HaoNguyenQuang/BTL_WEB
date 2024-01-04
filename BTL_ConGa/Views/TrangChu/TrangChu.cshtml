@@ -1,0 +1,286 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model X.PagedList.IPagedList<MonAn>
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    string idHoaDonBan = "";
+    idHoaDonBan = ViewBag.MaHDB;
+    BtlWebContext db = new BtlWebContext();
+    var baiViet = db.TinTucs.ToList();
+    if (ViewBag.checkHD == 0)
+    {
+
+    }
+}
+<head>
+    <style>
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .page-numbers {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            .page-numbers li {
+                display: inline-block;
+                margin-right: 25px;
+                font-size: 25px;
+            }
+    </style>
+
+</head>
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start Slider -->
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+            <img src="~/chicken/images/TrangChu/TrangChu_sliderchicken1.png" />
+        </li>
+        <li class="text-center">
+            <img src="~/chicken/images/TrangChu/TrangChu_sliderchicken2.png" />
+        </li>
+        <li class="text-center">
+            <img src="~/chicken/images/TrangChu/TrangChu_sliderchicken3.png" />
+        </li>
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!-- End Slider -->
+<!-- Start Categories  -->
+<div class="categories-shop">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="shop-cat-box">
+                    <img class="img-fluid" src="~/chicken/images/TrangChu/TrangChu_thanhphanantoan.png" />
+                    <a class="btn hvr-hover" href="#cat-box1" data-toggle="collapse" role="button" aria-expanded="false">Thành phần an toàn</a>
+                </div>
+
+                <div class="collapse" id="cat-box1">
+                    <h3>Thành phần an toàn</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="shop-cat-box">
+                    <img class="img-fluid" src="~/chicken/images/TrangChu/TrangChu_yeuthichga.png" />
+                    <a class="btn hvr-hover" href="#cat-box2" data-toggle="collapse" role="button" aria-expanded="false">Yêu thích gà</a>
+                </div>
+
+                <div class="collapse" id="cat-box2">
+                    <h3>Yêu thích gà</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="shop-cat-box">
+                    <img class="img-fluid" src="~/chicken/images/TrangChu/TrangChu_thanhphantuoingon.png" />
+                    <a class="btn hvr-hover" href="#cat-box3" data-toggle="collapse" role="button" aria-expanded="false">Thành phần tươi ngon</a>
+                </div>
+
+                <div class="collapse" id="cat-box3">
+                    <h3>Thành phần tươi ngon</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Categories -->
+<!-- Start Products  -->
+<div class="products-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-all text-center">
+                    <h1>Thực đơn</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row special-list">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+
+                            <img style="width: 210px;height:198.64px;" src=@Url.Content("../Chicken/images/ThucDon/"+item.AnhDaiDien) class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+
+                                @if (HttpContextAccessor.HttpContext.Session.GetString("UserName") != null)
+                                {
+                                    <a style="cursor:pointer;" class="cart" onclick="AddToCart('@ViewBag.checkHD','@ViewBag.maHDB','@item.MaMonAn','@ViewBag.maKH')">Thêm vào giỏ hàng</a>
+                                }
+                                else
+                                {
+                                    <a class="cart">Thêm vào giỏ hàng</a>
+                                }
+                            </div>
+                        </div>
+                        <a asp-controller="ChiTietMonAn" asp-action="ChiTietSanPham" asp-route-mamon="@item.MaMonAn">
+                            <div class="why-text">
+                                <h4>@item.TenMonAn</h4>
+                                <h5>@item.DonGia</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            }
+
+
+
+        </div>
+        <div class="pagination">
+            <ul class="page-numbers" style="color: red;">
+                <li><a class="page-number">@Html.PagedListPager(Model,page=>Url.Action("TrangChu",new{page=page}))</a></li>
+            </ul>
+        </div>
+        <!-- End Products  -->
+        <!-- Start Blog  -->
+        <div class="latest-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title-all text-center">
+                            <h1>Bài viết gần đây nhất</h1>
+                            <p>Cung cấp cho khách hàng những thông tin về website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach (var item in baiViet)
+                    {
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="blog-box">
+                                <div class="blog-img">
+                                    <img style="width: 350px;height: 296px;" class="img-fluid" src="@Url.Content("../Chicken/images/BaiViet/"+item.AnhDaiDien)" alt="" />
+                                </div>
+                                <div class="blog-content why-text" style="padding:0px">
+                                    <a class="cart" asp-controller="BaiViet" asp-action="ChiTietBaiViet" asp-route-MaTinTuc="@item.MaTinTuc" style="color: black">
+                                        <div class="title-blog">
+                                            <h3>@item.TieuDe</h3>
+                                            <p>@item.NoiDung</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog  -->
+
+<script type="text/javascript">
+
+    function AddToCart(checkHD, maHDB, maMonAn, maKH) {
+
+        const currentUrl = window.location.href;
+
+        if (checkHD == "1") {
+            const data = {
+                SoLuong: 1,
+                MaMonAn: maMonAn,
+                MaHoaDon: maHDB
+            };
+
+            //window.location.replace("https://localhost:7067/TaiKhoan/DangNhap");
+            fetch('https://localhost:7067/api/GioHangAPI/invoiceDetailExsits', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu đăng kí thành công, chuyển hướng đến trang "Thank you"
+                        alert("Thêm giỏ hàng thành công")
+                    } else {
+                        //Trường hợp đã có sản phẩm trong giỏ hàng
+                        fetch('https://localhost:7067/api/GioHangAPI/' + maHDB + '/' + maMonAn + '/1', {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                        })
+                            .then(response => {
+                                alert("Thêm giỏ hàng thành công iuiu");
+                                console.log(response);
+                                // Xử lý dữ liệu trả về nếu có
+                            })
+                            .catch(error => {
+                                console.log(error);
+                            });
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                });
+        }
+        if (checkHD == "0") {
+            const data = {
+                MaHDB: maHDB,
+                NgayTao: "2022-04-07T10:20:30",
+                TongTien: 0,
+                TrangThaiThanhToan: "Chưa thanh toán",
+                DiaChiGiaoHang: "",
+                SoDienThoai: "",
+                NguoiNhan: "",
+                GhiChu: "",
+                TinhTrangDonHang: "Thêm giỏ hàng",
+                MaVoucher: "",
+                IDKhachHang: maKH,
+                MaNhanVien: "NV00",
+                MaMonAn: maMonAn,
+                SoLuong: 1
+            };
+
+            //window.location.replace("https://localhost:7067/TaiKhoan/DangNhap");
+            fetch('https://localhost:7067/api/GioHangAPI/invoiceDetail', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu đăng kí thành công, chuyển hướng đến trang "Thank you"
+                        alert("Thêm giỏ hàng thành công");
+                        window.location.href = currentUrl;
+                    } else {
+
+                        alert('Món ăn này đã có trong giỏ hàng');
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                });
+        }
+    }
+</script>

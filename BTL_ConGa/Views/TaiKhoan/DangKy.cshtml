@@ -1,0 +1,297 @@
+﻿@model int
+@using Newtonsoft.Json
+@{
+    int last = Model + 1;
+    string idCustomer = "";
+    if (last >= 10)
+    {
+        idCustomer = "KH" + last.ToString();
+    }
+    else
+    {
+        idCustomer = "KH0" + last.ToString();
+    }
+    BtlWebContext db = new BtlWebContext();
+    var listCustomer = db.KhachHangs.Select(x => x.TaiKhoan).ToList();
+    string json = JsonConvert.SerializeObject(listCustomer);
+}
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Trang chủ</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Đăng ký</a></li>
+                    <li class="breadcrumb-item active">Trang chủ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<!-- Start Contact Us  -->
+<div class="contact-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <div class="contact-form-right">
+                    <h2 style="text-align:center;">Đăng ký</h2>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Username" placeholder="Tên đăng nhập" style="">
+                                    <div id="errorUsername" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Phone" name="name" placeholder="Số điện thoại" style="">
+                                    <div id="errorPhone" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Email" name="name" placeholder="Email" style="">
+                                    <div id="errorEmail" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" placeholder="Mật khẩu" id="inputnewpassword" class="form-control" name="name" style="">
+                                    <i class="fa-solid fas fa-eye" id="show-password5" style="position:absolute; top: 28%;right: 4%"></i>
+                                    <div id="errorPassword" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="inputacceptnewpassword" name="name" placeholder="Xác nhận mật khẩu" style="">
+                                    <i class="fa-solid fas fa-eye" id="show-password6" style="position:absolute; top: 28%;right: 4%"></i>
+                                    <div id="errorConfirmPassword" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button onclick="sukienDangKy('@idCustomer','@json');" type="submit" class="form-control" id="subject" style="background-color:red; border-radius: 20px;color:white;font-size:18px;font-weight:bold">Đăng ký</button>
+                                    <div class="help-block with-errors"></div>
+
+                                </div>
+                                <p style="text-align:center; font-size:20px;"><a asp-controller="TaiKhoan" asp-action="DangNhap">Quay trở lại trang đăng nhập</a></p>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script-->
+<script>
+
+    //Mật khẩu
+    var passField1 = document.querySelector('#inputnewpassword');
+    var btn1 = document.querySelector("#show-password5");
+    btn1.onclick = function () {
+        if (passField1.type === "password") {
+            passField1.type = "text";
+            btn1.className = "fa-solid fas fa-eye-slash"
+        }
+        else {
+            passField1.type = "password";
+            btn1.className = "fa-solid fas fa-eye"
+        }
+    }
+    //Xác nhận mới khẩu
+    var passField2 = document.querySelector('#inputacceptnewpassword');
+    var btn2 = document.querySelector("#show-password6");
+    btn2.onclick = function () {
+        if (passField2.type === "password") {
+            passField2.type = "text";
+            btn2.className = "fa-solid fas fa-eye-slash"
+        }
+        else {
+            passField2.type = "password";
+            btn2.className = "fa-solid fas fa-eye"
+        }
+    }
+
+</script>
+@*Sự kiện đăng ký*@
+<script type="text/javascript">
+
+    function sukienDangKy(idCus, lstUsername) {
+        //var inputUsername = document.getElementById('Username');
+        //var inputPhoneNumber = document.getElementById('Phone');
+        var idCustomer = idCus;
+        //.innerHTML"Không được để Username trống" + inputUsername);
+        var arrayInput = document.getElementsByTagName('input');
+        var inputUsername = arrayInput[1];
+        var inputPhoneNumber = arrayInput[2];
+        var inputEmail = arrayInput[3];
+        var inputPassword = arrayInput[4];
+        var inputConfirmPass = arrayInput[5];
+        //
+        var listUsername = lstUsername.replace(/[\[\]\"]/g, "");
+        var arrayUsername = listUsername.split(",");
+        //error
+        var errorUsername = document.getElementById("errorUsername");
+        var errorPhone = document.getElementById("errorPhone");
+        var errorEmail = document.getElementById("errorEmail");
+        var errorPassword = document.getElementById("errorPassword");
+        var errorConfirmPassword = document.getElementById("errorConfirmPassword");
+        //
+        //var arrayUsername = listUsername.
+        //const jsonListUsername = JSON.stringify(listUsername)
+        //for(let item in listUsername){
+        //    console.log(item)
+        //}
+        //console.log('json: '+ JSON.parse(lstUsername))
+        //console.log('type of lstUser: ' + typeof arrayUsername);
+        //listUsername.forEach(item=>console.log(item));
+
+
+        //arrayUsername.forEach(function (username) {
+        //    if (inputUsername.value == username) {
+        //        alert"Đã tồn tại username này");
+        //        inputUsername.focus();
+        //        throw "Stopped";
+        //    }
+        //});
+        var checkUsername = 0;
+        arrayUsername.forEach(function (username) {
+            if (inputUsername.value == username) {
+                checkUsername = 1;
+            }
+        });
+
+        //kiểm tra rỗng
+        if (inputUsername.value == "") {
+            errorUsername.innerHTML = "Không được để Username trống";
+            inputUsername.focus();
+            return;
+        }
+        else {
+            errorUsername.innerHTML = "";
+        }
+        if (inputPhoneNumber.value == "") {
+            errorPhone.innerHTML = "Không được để số điện thoại trống";
+            inputPhoneNumber.focus();
+            return;
+        }
+        else {
+            errorPhone.innerHTML = "";
+        }
+        if (inputEmail.value == "") {
+            errorEmail.innerHTML = "Không được để Email trống";
+            inputEmail.focus();
+            return;
+        }
+        else {
+            errorEmail.innerHTML = "";
+        }
+        if (inputPassword.value == "") {
+            errorPassword.innerHTML = "Không được để Password trống";
+            inputEmail.focus();
+            return;
+        }
+        else {
+            errorPassword.innerHTML = "";
+        }
+        if (inputConfirmPass.value == "") {
+            errorConfirmPassword.innerHTML = "Không được để xác nhận Password trống";
+            inputEmail.focus();
+            return;
+        }
+        else {
+            errorConfirmPassword.innerHTML = "";
+        }
+        if (inputPassword.value != inputConfirmPass.value) {
+            errorConfirmPassword.innerHTML = "Mật khẩu không trùng khớp";
+            inputConfirmPass.focus();
+            return;
+        }
+        else {
+            errorConfirmPassword.innerHTML = "";
+        }
+        // regex
+        var regexPhoneNumber = /(((\+|)84)|0)(3|5|7|8|9)+([0-9]{8})\b/;
+        if (!inputPhoneNumber.value.match(regexPhoneNumber)) {
+            errorPhone.innerHTML = 'Nhập sai định dạng số điện thoại';
+            inputPhoneNumber.focus();
+            return;
+        }
+        else {
+            errorPhone.innerHTML = "";
+        }
+        var regexEmail = /^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!inputEmail.value.match(regexEmail)) {
+            errorEmail.innerHTML = 'Nhập sai định dạng email';
+            inputEmail.focus();
+            return;
+        }
+        else {
+            errorEmail.innerHTML = "";
+        }
+        if (checkUsername == 1) {
+            errorUsername.innerHTML = "Username này đã tồn tại";
+            return;
+        }
+        else {
+            errorUsername.innerHTML = "";
+            checkUsername = 0;
+        }
+
+
+        //console.log(listUsername)
+        const data = {
+            Username: inputUsername.value,
+            Password: inputPassword.value,
+            AccountType: 'LTK02',
+            CustomerId: idCustomer,
+            CustomerName: '',
+            DateOfBirth: '2019-01-06T17:16:40',
+            PhoneNumber: inputPhoneNumber.value,
+            Address: '',
+            Email: inputEmail.value,
+            Sex: ''
+        };
+
+        //window.location.replace("https://localhost:7067/TaiKhoan/DangNhap");
+        fetch('https://localhost:7067/api/TaiKhoanAPI/DangKy', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        //BootstrapDialog.show({
+        //    title: 'Đăng kí thành công',
+        //    message: 'Bạn sẽ quay trở lại trang đăng nhập'
+        //});
+        window.location.replace("https://localhost:7067/TaiKhoan/DangNhap");
+
+        //.then(response => response.text())
+        //.then(result => console.log(result.CustomerId))
+
+        //.catch(error => {
+
+        //    console.log(error);
+        //});
+    }
+
+
+</script>

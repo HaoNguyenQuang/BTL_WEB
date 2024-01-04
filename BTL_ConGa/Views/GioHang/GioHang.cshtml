@@ -1,0 +1,415 @@
+﻿@model HoaDonBan
+@{
+
+}
+
+@if(Model != null)
+{
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Giỏ Hàng</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Giỏ Hàng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+    <!-- Start Cart  -->
+    <div class="cart-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Tên Sản Phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số Lượng</th>
+                                    <th>Tổng Tiền</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody id="allProduct">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="coupon-box">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control" placeholder="Nhập mã Voucher" aria-label="Coupon code" type="text">
+                            <div class="input-group-append">
+                                <button class="btn btn-theme" type="button">Áp Dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="update-box">
+                        <input value="Cập nhật giỏ hàng" type="submit">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-lg-8 col-sm-12"></div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="order-box">
+                        <h3>Hóa đơn</h3>
+                        <div id="TongTien" class="d-flex">
+                            @*Tổng tiền*@
+                        </div>
+                        @*<div class="d-flex">
+                    <h4>Giảm Giá</h4>
+                    <div class="ml-auto font-weight-bold"> 10.000 </div>
+                    </div>
+                    <hr class="my-1">
+                    <div class="d-flex">
+                    <h4>Mã Giảm Giá</h4>
+                    <div class="ml-auto font-weight-bold"> 10.000 </div>
+                    </div>
+                    <div class="d-flex">
+                    <h4>Thuế</h4>
+                    <div class="ml-auto font-weight-bold"> 50.000 </div>
+                    </div>
+                    <div class="d-flex">
+                    <h4>Phí Giao Hàng</h4>
+                    <div class="ml-auto font-weight-bold"> 0 </div>
+                    </div>*@
+                        <hr>
+                        <div id="tien2" class="d-flex gr-total">
+                            @*tien2*@
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-12 d-flex shopping-box"><a onclick="checkValid('@Model.MaHoaDon')" class="ml-auto btn hvr-hover">Thanh Toán</a> </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="../Chicken/js/jquery-3.2.1.min.js"></script>
+    <!-- Thêm script để bắt sự kiện thay đổi giá trị của input -->
+    <!-- End Cart -->
+    <script>
+        const formatCurrency = function (amount) {
+            // Khai báo biến formatter và gán giá trị là một instance của lớp Intl.NumberFormat, với các thuộc tính được thiết lập để định dạng tiền tệ theo chuẩn tiếng Việt.
+            var formatter = new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND',
+                minimumFractionDigits: 0
+            });
+            // Gọi phương thức format của đối tượng formatter với đầu vào là số tiền cần định dạng, và trả về chuỗi đã được định dạng.
+            return formatter.format(amount);
+        }
+        //Cập nhật lại số tiền
+        function updateMoney(maHoaDon, money) {
+            // Gửi yêu cầu PUT đến API để cập nhật số lượng sản phẩm
+            fetch(`https://localhost:7067/api/GioHangAPI/updateMoney?maHDB=${maHoaDon}&money=${money}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+
+            })
+                .then(response => response.json())
+                .then(data => {
+                    //getProduct('@Model.MaHoaDon', '@ViewBag.taiKhoan');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+        //Khi mới vào thì sẽ xuất hiện thông tin giỏ hàng
+        $(document).ready(function () {
+            getProduct('@Model.MaHoaDon', '@ViewBag.taiKhoan');
+            return;
+        });
+        //Lấy tất cả sản phẩm khi load trang
+        function getProduct(maHoaDon, taiKhoan) {
+            var str = '';
+            $.ajax({
+                // Gọi API
+                url: 'https://localhost:7067/api/GioHangAPI/' + maHoaDon + '/' + taiKhoan,
+                method: "GET",
+                contentType: "json",
+                dataType: "json",
+                error: function (response) {
+                    console.log(response);
+                },
+                //Khi thành công thì xuất hiện
+                success: function (data) {
+                    let tongTien = 0;
+                    $.each(data, function (key, val) {
+                        tongTien += parseInt(val.thanhTien);
+                        str += ` <tr>
+                                                    <td class="thumbnail-img">
+                                                        <a href="#">
+                                                            <img class="img-fluid" src="${'../Chicken/images/ThucDon/' + val.anhDaiDien}" alt="" style="width: 96px; height: 72px;" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="name-pr">
+                                                        <a href="#">
+                                                            ${val.tenMonAn}
+                                                        </a>
+                                                    </td>
+                                                    <td class="price-pr">
+                                                        <p>${formatCurrency(val.donGia)}</p>
+                                                    </td>
+                                                        <td class="quantity-box"><input type="number" onchange="handleChange('${val.maHoaDon}','${val.maMonAn}',this)" size="4" value="${val.soLuong}" min="0" step="1" class="c-input-text qty text"></td>
+                                                    <td class="total-pr">
+                                                        <p>${formatCurrency(val.thanhTien)}</p>
+                                                    </td>
+                                                    <td class="remove-pr">
+                                                        <a onclick="deleteItem('${val.maHoaDon}','${val.maMonAn}')">
+                                                            <i class="fas fa-times"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>`
+
+                    });
+                    var strMoney = `<h4>Tổng Tiền</h4>
+                                        <div class="ml-auto font-weight-bold">${formatCurrency(tongTien)}</div>`;
+                    var strMoney2 = `<h5>Tổng Tiền</h5>
+                                            <div class="ml-auto h5"> ${formatCurrency(tongTien)} </div>`;
+                    $('#TongTien').html(strMoney);
+                    $('#tien2').html(strMoney2);
+                    $('#allProduct').html(str);
+                    updateMoney(maHoaDon, tongTien)
+
+                }
+            });
+        }
+        //Xử lý khi người dùng tăng giảm số lượng
+        function handleChange(maHoaDon, maMonAn, quantity) {
+            // Gửi yêu cầu PUT đến API để cập nhật số lượng sản phẩm
+            fetch(`https://localhost:7067/api/GioHangAPI/updateInvoiceDetail?maHDB=${maHoaDon}&maMonAn=${maMonAn}&quantity=${quantity.value}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    quantity: quantity
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    getProduct('@Model.MaHoaDon', '@ViewBag.taiKhoan');
+                    const quantityElement = document.getElementById('quantity');
+                    quantityElement.innerText = data.quantity;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+        //Xóa các sản phẩm
+        function deleteItem(maHoaDon, maMonAn) {
+            // Gửi yêu cầu PUT đến API để cập nhật số lượng sản phẩm
+            fetch(`https://localhost:7067/api/GioHangAPI/${maHoaDon}/${maMonAn}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+
+            })
+                .then(response => response.json())
+                .then(data => {
+                    getProduct('@Model.MaHoaDon', '@ViewBag.taiKhoan');
+                    alert("Xóa thành công");
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+        //Kiểm tra hợp lệ khi khách hàng bấm vào thanh toán
+        function checkValid(maHoaDon) {
+            // Gửi yêu cầu PUT đến API để cập nhật số lượng sản phẩm
+            fetch(`https://localhost:7067/api/GioHangAPI/CheckValid?maHDB=${maHoaDon}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+
+            })
+                .then(response => {
+                    if (response.ok) {
+                        response.json().then(data => {
+                            // xử lý dữ liệu trả về khi thành công
+                            //$.each(data, function (key, val) {
+                            //    //UpdateQuantityProduct(val.maMonAn,val.soLuong)
+                            //});
+                            window.location.replace("https://localhost:7067/GioHang/ThanhToan");
+                        });
+                    } else {
+                        response.json().then(data => {
+                            // xử lý dữ liệu trả về khi lỗi
+                            $.each(data, function (key, val) {
+                                alert("Món " + val.tenMonAn + " chỉ còn " + val.soLuong);
+                            });
+                        });
+                    }
+                })
+                .catch(response => {
+
+                    response.json().then(data => {
+                        // xử lý dữ liệu trả về khi lỗi
+                        $.each(data, function (key, val) {
+                            console.log(val.maMonAn);
+                        });
+                    });
+                })
+        }
+        //Cập nhật lại số luongj trong csdl
+        function UpdateQuantityProduct(maMonAn, quantity) {
+            // Gửi yêu cầu PUT đến API để cập nhật số lượng sản phẩm
+            fetch(`https://localhost:7067/api/GioHangAPI/UpdateQuantity?maMonAn=${maMonAn}&quantity=${quantity}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('success');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+    </script>
+}
+else
+{
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Giỏ Hàng</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Giỏ Hàng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+    <!-- Start Cart  -->
+    <div class="cart-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Tên Sản Phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số Lượng</th>
+                                    <th>Tổng Tiền</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody id="allProduct">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="coupon-box">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control" placeholder="Nhập mã Voucher" aria-label="Coupon code" type="text">
+                            <div class="input-group-append">
+                                <button class="btn btn-theme" type="button">Áp Dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="update-box">
+                        <input value="Cập nhật giỏ hàng" type="submit">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-lg-8 col-sm-12"></div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="order-box">
+                        <h3>Hóa đơn</h3>
+                        <div id="TongTien" class="d-flex">
+                            @*Tổng tiền*@
+                        </div>
+                        @*<div class="d-flex">
+                    <h4>Giảm Giá</h4>
+                    <div class="ml-auto font-weight-bold"> 10.000 </div>
+                    </div>
+                    <hr class="my-1">
+                    <div class="d-flex">
+                    <h4>Mã Giảm Giá</h4>
+                    <div class="ml-auto font-weight-bold"> 10.000 </div>
+                    </div>
+                    <div class="d-flex">
+                    <h4>Thuế</h4>
+                    <div class="ml-auto font-weight-bold"> 50.000 </div>
+                    </div>
+                    <div class="d-flex">
+                    <h4>Phí Giao Hàng</h4>
+                    <div class="ml-auto font-weight-bold"> 0 </div>
+                    </div>*@
+                        <hr>
+                        <div id="tien2" class="d-flex gr-total">
+                            @*tien2*@
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-12 d-flex shopping-box"><a class="ml-auto btn hvr-hover">Thanh Toán</a> </div>
+
+            </div>
+
+        </div>
+    </div>
+}
+

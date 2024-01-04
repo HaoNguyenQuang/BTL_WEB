@@ -1,0 +1,209 @@
+﻿@model BTL_ConGa.Models.HoaDonBan
+@using BTL_ConGa.Models;
+@{
+    ViewData["Title"] = "ChiTietHoaDonBan";
+    Layout = "~/Areas/NhanVien/Views/Shared/_LayoutNhanVien.cshtml";
+    BtlWebContext db = new BtlWebContext();
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Hóa đơn bán</h5>
+            <p> @Html.DisplayFor(model => model.MaHoaDon) </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <dl class="row">
+                                <dt class="col-sm-2">
+                                    Ngày tạo
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.NgayTao)
+                                </dd>
+
+                                <dt class="col-sm-2">
+                                    Mã nhân viên
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.MaNhanVien)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tên nhân viên
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @{
+                                        var NhanVien = new BtlWebContext().NhanViens.Find(Model.MaNhanVien);
+                                    }
+                                    @NhanVien.TenNhanVien
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tên khách hàng
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @{
+                                        var KhachHang = new BtlWebContext().KhachHangs.Find(Model.IdkhachHang);
+                                    }
+                                    @KhachHang.TenKhachHang
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Địa chỉ giao hàng
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.DiaChiGiaoHang)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Số điện thoại
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.SoDienThoai)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Người nhận
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.NguoiNhan)
+                                </dd>
+
+                                <dt class="col-sm-2">
+                                    Món ăn
+                                </dt>
+                                @{
+                                    var chitiethoadon = db.ChiTietHoaDonBans.Where(x => x.MaHoaDon == Model.MaHoaDon).ToList();
+                                    int slchietiethoadon = chitiethoadon.Count(), i = 0;
+                                    double TongTien = 0, ThanhTien=0;
+                                }
+                                @if (slchietiethoadon == 0)
+                                {
+                                    <dd class="col-sm-10">
+                                        Khách chưa đặt món
+                                    </dd>
+                                }
+                                else
+                                {
+
+                                    <dd class="col-sm-10"></dd>
+                                    <dt class="col-sm-2"></dt>
+                                    <dd class="col-sm-10">
+                                        <table class="table table-bordered dataTable" @*id="dataTable"*@
+                                           width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+                                           style="width: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Tên món
+                                                        </th>
+                                                        <th>
+                                                            Ảnh
+                                                        </th>
+                                                        <th>
+                                                            Số lượng
+                                                        </th>
+                                                        <th>
+                                                            Đơn giá
+                                                        </th>
+                                                        <th>
+                                                            Thành tiền
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var item in chitiethoadon)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                @{
+                                                                    var MonAn = db.MonAns.Find(item.MaMonAn);
+                                                                    i++;
+                                                                }
+                                                                @i .@MonAn.TenMonAn
+                                                            </td>
+                                                            <td>
+                                                                @{
+                                                                    string tenthumuc = "";
+                                                                    if (MonAn.MaDanhMuc == "DM01")
+                                                                        tenthumuc += "ComBo";
+                                                                    else if (MonAn.MaDanhMuc == "DM02")
+                                                                        tenthumuc += "ThucAnTrua";
+                                                                    else if (MonAn.MaDanhMuc == "DM03")
+                                                                        tenthumuc += "NuocUong";
+                                                                    else if (MonAn.MaDanhMuc == "DM04")
+                                                                        tenthumuc += "MonChinh";
+                                                                    else
+                                                                        tenthumuc += "DongGia";
+                                                                }
+                                                                <img src="@Url.Content("~/Chicken/images/ThucDon/"+tenthumuc+"/"+MonAn.AnhDaiDien)" alt="" style="width:100px; height:100px" />
+                                                            </td>
+                                                            <td>
+                                                                @item.SoLuong
+                                                            </td>
+                                                            <td>
+                                                                @MonAn.DonGia
+                                                            </td>
+                                                            <td>
+                                                                @{
+                                                                    ThanhTien = MonAn.DonGia * item.SoLuong;
+                                                                    TongTien += ThanhTien;
+                                                                }
+                                                                @ThanhTien
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>                                   
+                                           </table>
+                                       </dd>
+
+                                }
+
+                                <dt class="col-sm-2">
+                                    Ghi chú
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.GhiChu)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Trạng thái thanh toán
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.TrangThaiThanhToan)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tình trạng đơn hàng
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.TinhTrangDonHang)
+                                </dd>
+
+                                <dt class="col-sm-2">
+                                    Voucher
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @{
+                                        var Voucher = new BtlWebContext().Vouchers.Find(Model.MaVoucher);
+                                    }
+                                    @Voucher.TenVoucher
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tổng tiền
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @{
+                                        if (Voucher.MaVoucher != "")
+                                            TongTien -= TongTien * (Voucher.PhanTram * 1.0 / 100.0);
+                                    }
+                                    @TongTien
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <a class="btn btn-primary" asp-action="HoaDonBan">Quay lại</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,255 @@
+﻿@model List<HoaDonBan>
+<!-- jQuery library -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<br />
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Đơn đặt hàng của bạn</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Tài khoản của tôi</a></li>
+                    <li class="breadcrumb-item active">Đơn đặt hàng của bạn</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<div class="container" style="margin-top: 80px">
+    <div class="bw">
+        <div class="dh">
+            <div class="ly">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Mã hóa đơn</th>
+                            <th>Anh món ăn</th>
+                            <th>Tên món ăn</th>
+                            <th>Ngày mua</th>
+                            <th>Tổng hóa đơn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <a class="btn btn-primary btn-sm" onclick="getProductDetail('@item.MaHoaDon','@item.TongTien')" href="#exampleModal" data-toggle="modal">Xem chi tiết</a>
+                                    <a class="btn btn-danger btn-sm" onclick="huyDonHang('@item.MaHoaDon');" style="color:white">Hủy đơn hàng</a>
+                                </td>
+                                <td>
+                                    @{
+                                        int demAnh = 0;
+                                    }
+                                    @foreach (var itemDetail in ViewBag.invoiceDetail)
+                                    {
+                                        if (itemDetail.MaHoaDon == item.MaHoaDon)
+                                        {
+                                            <img src="@Url.Content("~/chicken/images/ThucDon/" + itemDetail.AnhDaiDien)" width="48" height="48" style="border-radius: 5px" />
+                                            <br />
+                                            demAnh++;
+                                            if (demAnh == 2)
+                                                break;
+                                        }
+
+                                    }
+                                </td>
+                                <td>
+                                    @{
+                                        string MaHDB = "";
+                                        int demTenMonAn = 0;
+                                    }
+                                    @foreach (var itemDetail in ViewBag.invoiceDetail)
+                                    {
+                                        if (itemDetail.MaHoaDon == item.MaHoaDon)
+                                        {
+                                            MaHDB = item.MaHoaDon;
+                                            <a asp-controller="ChiTietMonAn" asp-action="ChiTietSanPham" asp-route-MaMon="@itemDetail.MaMonAn">@itemDetail.TenMonAn</a> <br />
+                                            <br />
+                                            demTenMonAn++;
+                                            if (demTenMonAn == 2)
+                                                break;
+                                        }
+
+                                    }
+                                </td>
+                                <td>@item.NgayTao.ToString("dd-MM-yyyy")</td>
+                                <td>@item.TongTien.ToString("#,##") &#8363</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Chi tiết hóa đơn</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="container-fluid my-10  d-flex  justify-content-center">
+                        <div class="card card-4">
+                            <div class="card-header bg-white">
+                                <div class="media flex-sm-row flex-column-reverse justify-content-between  ">
+                                    <div class="col my-auto"> <h4 class="mb-0">Lịch sử hóa đơn: <span class="change-color"></span></h4> </div>
+                                    <div class="col-auto text-center  my-auto pl-0 pt-sm-4"> <img class="img-fluid my-auto align-items-center mb-0 pt-3" src="~/chicken/images/logo/logochicken.png" width="115" height="115"> <p class="mb-4 pt-0 Glasses">Cánh gà siêu ngon nhóm 04</p>  </div>
+                                </div>
+                            </div>
+                            <div id="DisplayProduct" class="card-body">
+                                @* <div class="row justify-content-between mb-3">
+                                <div class="col-auto"> <h3 class="color-1 mb-0 change-color">Biên lai</h3> </div>
+
+                                </div>*@
+
+
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        <div class="row justify-content-between">
+                                            <div class="col-auto"><p class="mb-1 text-dark"><b>Chi tiết hóa đơn</b></p></div>
+                                            <div class="flex-sm-col text-right col"> <p class="mb-1"><b>Tổng tiền</b></p> </div>
+                                            <div class="flex-sm-col col-auto"> <p class="mb-1">4.835.000 VND</p> </div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class="flex-sm-col text-right col"><p class="mb-1"> <b>Discount</b></p> </div>
+                                            <div class="flex-sm-col col-auto"><p class="mb-1">&#8377;150</p></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row invoice ">
+                                    <div class="col"><p class="mb-1"> Số hóa đơn : 788152</p><p class="mb-1">Ngày mua : 22 Dec,2022</p><p class="mb-1">Mã voucher:18KU-62IIK</p></div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="jumbotron-fluid">
+                                    <div class="row justify-content-between ">
+                                        <div class="col-sm-auto col-auto my-auto"><img class="img-fluid my-auto align-self-center " src="../chicken/images/logo/logochicken.png" width="115" height="115"></div>
+                                        <div class="col-auto my-auto "><h2 class="mb-0 font-weight-bold">Tổng tiền phải trả</h2></div>
+                                        <div id="GiaTien" class="col-auto my-auto ml-auto">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mt-3 mt-md-0">
+                                        <div class="col-auto border-line"> <small class="text-white">PAN:AA02hDW7E</small></div>
+                                        <div class="col-auto border-line"> <small class="text-white">CIN:UMMC20PTC </small></div>
+                                        <div class="col-auto "><small class="text-white">GSTN:268FD07EXX </small> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div>
+    <script type="text/javascript">
+        // Khai báo function formatCurrency để định dạng tiền tệ với đầu vào là số tiền cần định dạng.
+        const formatCurrency = function (amount) {
+            // Khai báo biến formatter và gán giá trị là một instance của lớp Intl.NumberFormat, với các thuộc tính được thiết lập để định dạng tiền tệ theo chuẩn tiếng Việt.
+            var formatter = new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND',
+                minimumFractionDigits: 0
+            });
+            // Gọi phương thức format của đối tượng formatter với đầu vào là số tiền cần định dạng, và trả về chuỗi đã được định dạng.
+            return formatter.format(amount);
+        }
+        function getProductDetail(maHDB, tongTien) {
+            var str = '';
+            var money = formatCurrency(tongTien);
+            var strMoney = `<h1 class="display-3 ">${money}</h1>`
+            $.ajax({
+                url: 'https://localhost:7067/api/TaiKhoanAPI/' + maHDB,
+                method: "GET",
+                contentType: "json",
+                dataType: "json",
+                error: function (response) {
+                    console.log(response);
+                },
+                success: function (data) {
+                    console.log('ok')
+                    $.each(data, function (key, val) {
+                        var moneyThanhTien = formatCurrency(val.thanhTien);
+                        str += `<div class="row">
+                                                            <div class="col">
+                                                                <div class="card card-2">
+                                                                    <div class="card-body">
+                                                                        <div class="media">
+                                                                            <div class="sq align-self-center "> <img class="img-fluid  my-auto align-self-center mr-2 mr-md-4 pl-0 p-0 m-0"
+                                                                                    src="${'../Chicken/images/ThucDon/' + val.anhDaiDien}" width="135" height="135" /> </div>
+                                                                            <div class="media-body my-auto text-right">
+
+                                                                                <div class="row  my-auto flex-column flex-md-row">
+                                                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                        <a href="${'../ChiTietMonAn/ChiTietSanPham?MaMon=' + val.maMonAn}">
+                                                                                            <h4 class="mb-0">${val.tenMonAn}</h4>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                        <h4 class="mb-0">Số lượng : ${val.soLuong}</h4>
+                                                                                    </div>
+                                                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                        <h4 class="mb-0"> ${moneyThanhTien} </h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <br/>`
+
+                    });
+                    $('#DisplayProduct').html(str);
+                    $('#GiaTien').html(strMoney);
+                }
+            });
+        }
+        function huyDonHang(maHDB) {
+
+            const currentUrl = window.location.href;
+
+
+            $.ajax({
+                url: 'https://localhost:7067/api/GioHangAPI/deleteInvoice?maHDB=' + maHDB,
+                method: "DELETE",
+                contentType: "json",
+                dataType: "json",
+                error: function (response) {
+                    console.log(response);
+                },
+                success: function (data) {
+                    window.location.href = currentUrl;
+                }
+            });
+        }
+    </script>
+</div>
+
+

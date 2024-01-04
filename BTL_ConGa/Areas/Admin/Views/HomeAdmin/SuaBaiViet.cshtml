@@ -1,0 +1,191 @@
+﻿@model BTL_ConGa.Models.TinTuc;
+
+@{
+    ViewData["Title"] = "SuaBaiViet";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Sửa bài viết</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form asp-action="SuaBaiViet">
+                                <div class="form-group">
+                                    <label class="control-label">Mã tin tức</label>
+                                    <input id="MaTinTuc" asp-for="MaTinTuc" disabled class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Ảnh đại diện</label>
+                                    <input type="file" id="AnhDaiDien" oninput="checkAnh()" asp-for="AnhDaiDien" class="form-control-file" />
+                                    @* <input disabled id="myHidden" oninput="checkAnh()" name="myHidden" class="form-control">
+                                    document.getElementById('myHidden').value = this.value;*@
+                                    <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
+                                    <span id="AnhError" class="invalid-feedback">Ảnh đại diện không được bỏ trống</span>
+
+                                </div>
+                                <div class="form-group">
+                                    <img id="Anh" src="" alt="" style="width:300px; height:300px" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tiêu đề</label>
+                                    <input id="TieuDe" asp-for="TieuDe" oninput="checkTieuDe()" class="form-control" />
+                                    <span asp-validation-for="TieuDe" class="text-danger"></span>
+                                    <span id="TieuDeError" class="invalid-feedback">Tiêu đề không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Nội dung</label>
+                                    @*<input id="NoiDung" asp-for="NoiDung" class="form-control" />*@
+                                    <textarea class="form-control" id="NoiDung" oninput="checkNoiDung()" style="width: 100%; height: 200px;"></textarea>
+                                    <span asp-validation-for="NoiDung" class="text-danger"></span>
+                                    <span id="NoiDungError" class="invalid-feedback">Nội dung không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <input onclick="SuaBaiViet()" value="Sửa bài viết" class="btn btn-primary" />
+                                    <a class="btn btn-primary" asp-action="BaiViet">Quay lại</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .is-invalid {
+        border-color: #dc3545 !important;
+    }
+
+    .invalid-feedback {
+        display: none;
+        color: #dc3545;
+    }
+</style>
+<script>
+    let params = new URLSearchParams(window.location.search);
+    let MaTinTuc = params.get('MaTinTuc');
+    let AnhDaiDien = params.get('AnhDaiDien');
+    let TieuDe = params.get('TieuDe');
+    let NoiDung = params.get('NoiDung');
+
+
+    var image = document.getElementById('Anh');
+    image.src = '/Chicken/images/BaiViet/' + AnhDaiDien;
+    console.log(image.src);
+    image.alt = 'Bài viết';
+
+
+
+    document.getElementById("MaTinTuc").setAttribute("value", MaTinTuc);
+    document.getElementById("AnhDaiDien").setAttribute("value", AnhDaiDien);
+    document.getElementById("TieuDe").setAttribute("value", TieuDe);
+    document.getElementById("NoiDung").value = NoiDung;
+
+
+</script>
+
+<script type="text/javascript">
+    //Hàm thêm mới khách hàng . dùng $.ajax thwucj hiện method httpPost
+
+    function SuaBaiViet() {
+        var MaTinTuc = document.getElementById("MaTinTuc").value;
+        var AnhDaiDien = document.getElementById("Anh");
+        var TieuDe = document.getElementById("TieuDe").value;
+        var NoiDung = document.getElementById("NoiDung").value;
+
+        var anh = AnhDaiDien.src.split(/[\\|/]/); // Tách chuỗi đường dẫn tệp tin bằng cả ký tự '\' và '/'
+        var anhchinh = anh[anh.length - 1];
+
+        var url = 'https://localhost:7067/api/baivietapi?MaTinTuc=' + MaTinTuc
+            + '&AnhDaiDien=' + anhchinh
+            + '&TieuDe=' + TieuDe
+            + '&NoiDung=' + NoiDung;
+        $.ajax({
+            url: url,
+            method: 'PUT',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+
+                checkTieuDe();
+                checkNoiDung();
+            },
+            success: function (reponse) {
+
+                if (checkTieuDe() == true && checkNoiDung() == true) {
+                    alert("Sửa thành công");
+                    window.location.href = 'https://localhost:7067/admin/baiviet';
+                }
+                else
+                    alert("Bạn chưa nhập đầy đủ thông tin");
+
+            }
+        });
+    }
+
+
+    function checkAnh() {
+
+        var anhdaidien = document.getElementById("AnhDaiDien");
+        //if (anhdaidien.value == "") {
+        //    anhdaidien.classList.add("is-invalid");
+        //    document.getElementById("AnhError").style.display = "block";
+        //    return false;
+        //}
+        if (anhdaidien.value != "") {
+            anhdaidien.classList.remove("is-invalid");
+            document.getElementById("AnhError").style.display = "none";
+
+            var anh = anhdaidien.value.split(/[\\|/]/); // Tách chuỗi đường dẫn tệp tin bằng cả ký tự '\' và '/'
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('Anh');
+            $.ajax({
+                type: "POST",
+                url: "/admin/suabaiviet",
+                data: { anhchinh: anhchinh },
+                success: function (response) {
+                    //console.log(response);
+                    image.src = '/Chicken/images/BaiViet/' + anhchinh;
+                }
+            });
+        }
+
+
+        //return true;
+
+    }
+
+    function checkTieuDe() {
+        var tieude = document.getElementById("TieuDe");
+        if (tieude.value == "") {
+            tieude.classList.add("is-invalid");
+            document.getElementById("TieuDeError").style.display = "block";
+            return false;
+        }
+        tieude.classList.remove("is-invalid");
+        document.getElementById("TieuDeError").style.display = "none";
+        return true;
+
+    }
+
+    function checkNoiDung() {
+        var noidung = document.getElementById("NoiDung");
+        if (noidung.value == "") {
+            noidung.classList.add("is-invalid");
+            document.getElementById("NoiDungError").style.display = "block";
+            return false;
+        }
+        noidung.classList.remove("is-invalid");
+        document.getElementById("NoiDungError").style.display = "none";
+        return true;
+
+    }
+</script>
+

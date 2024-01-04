@@ -1,0 +1,283 @@
+﻿@model HoaDonBan
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Thanh Toán</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Giỏ hàng</a></li>
+                    <li class="breadcrumb-item active">Thanh Toán</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<!-- Start Cart  -->
+<div class="cart-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6 mb-3">
+                <div class="checkout-address">
+                    <div class="title-left">
+                        <h3>Địa chỉ nhận hàng</h3>
+                    </div>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="firstName">Họ và tên người nhận</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Họ và tên" style="font-weight: bold;" value="@ViewBag.Customer.TenKhachHang" required>
+                            <div class="invalid-feedback"> Bắt buộc phải nhập Họ </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address">Địa chỉ *</label>
+                            <input type="text" class="form-control" id="address" style="font-weight: bold;" value="@ViewBag.Customer.DiaChi" placeholder="Địa chỉ" required>
+                            <div class="invalid-feedback"> Vui lòng nhập địa chỉ của bạn </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone">Số Điện Thoại</label>
+                            <input type="text" class="form-control" id="phone" style="font-weight: bold;" value="@ViewBag.Customer.SoDienThoai" placeholder="Số Điện Thoại">
+                        </div>
+                        <div class="mb-3">
+                            <label for="note">Ghi chú</label>
+                            <input type="text" class="form-control" id="note" placeholder="Ghi chú">
+                        </div>
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                            <label class="custom-control-label" for="save-info">Lưu thông tin này cho lần sau</label>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="title"> <span>Phương thức thanh toán</span> </div>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="paypal">Paypal</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="debit">Thanh toán khi nhận hàng</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Tên trên thẻ</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required> <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback"> Name on card is required </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Số thẻ</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback"> Credit card number is required </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+                                <div class="payment-icon">
+                                    <ul>
+                                        <li><img class="img-fluid" src="../Chicken/images/payment-icon/1.png" alt=""></li>
+                                        <li><img class="img-fluid" src="../Chicken/images/payment-icon/2.png" alt=""></li>
+                                        <li><img class="img-fluid" src="../Chicken/images/payment-icon/3.png" alt=""></li>
+                                        <li><img class="img-fluid" src="../Chicken/images/payment-icon/5.png" alt=""></li>
+                                        <li><img class="img-fluid" src="../Chicken/images/payment-icon/7.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-1">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 mb-3">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                        <div class="odr-box">
+                            <div class="title-left">
+                                <h3>Giỏ hàng</h3>
+                            </div>
+                            <div id="GioHang" class="rounded p-2 bg-light">
+                                @*idTien 1*@
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                        <div class="order-box">
+                            <div class="title-left">
+                                <h3>Hóa đơn của bạn</h3>
+                            </div>
+                            <div class="d-flex">
+                                <div class="font-weight-bold">Sản phẩm</div>
+                                <div class="ml-auto font-weight-bold">Tổng tiền</div>
+                            </div>
+                            <hr class="my-1">
+                            <div id="TongTien1" class="d-flex">
+                            </div>
+                            <hr>
+                            <div id="TongTien2" class="d-flex gr-total">
+                                @*idTien 2*@
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex shopping-box"> <a onclick="orderSuccess('@Model.MaHoaDon')" class="ml-auto btn hvr-hover">Hoàn Tất</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../Chicken/js/jquery-3.2.1.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        getProduct('@Model.MaHoaDon', '@ViewBag.taiKhoan');
+    });
+    //Ddịnh dạng kiểu tiền Việt Nam
+    const formatCurrency1 = function (amount) {
+        // Khai báo biến formatter và gán giá trị là một instance của lớp Intl.NumberFormat, với các thuộc tính được thiết lập để định dạng tiền tệ theo chuẩn tiếng Việt.
+        var formatter = new Intl.NumberFormat('vi-VN', {
+            style: 'currency',
+            currency: 'VND',
+            minimumFractionDigits: 0
+        });
+        // Gọi phương thức format của đối tượng formatter với đầu vào là số tiền cần định dạng, và trả về chuỗi đã được định dạng.
+        return formatter.format(amount);
+    }
+    //Lấy thông tin các sản phẩm
+    function getProduct(maHoaDon, taiKhoan) {
+        var str = '';
+
+        $.ajax({
+            url: 'https://localhost:7067/api/GioHangAPI/' + maHoaDon + '/' + taiKhoan,
+            method: "GET",
+            contentType: "json",
+            dataType: "json",
+            error: function (response) {
+                console.log(response);
+            },
+            success: function (data) {
+                let tongTien = 0;
+                console.log('ok')
+                $.each(data, function (key, val) {
+                    tongTien += parseInt(val.thanhTien);
+                    str += `<div class="media mb-2 border-bottom">
+                                    <div class="media-body">
+                                        <a href="detail.html"> ${val.tenMonAn}</a>
+                                            <div class="text-muted">Giá: ${formatCurrency1(val.donGia)} <span class="mx-2">|</span> Số lượng: ${val.soLuong} <span class="mx-2">|</span> ${formatCurrency1(val.thanhTien)}</div>
+                                    </div>
+                                </div>`
+                    //str += '<p>' + val.tenSp + '</p>';
+                });
+                var strMoney = `<h4>Tổng tiền</h4>
+                                        <div class="ml-auto font-weight-bold"> ${formatCurrency1(tongTien)} </div>`;
+                var strMoney2 = `<h5>Tổng tiền</h5>
+                                        <div class="ml-auto h5"> ${formatCurrency1(tongTien)} </div>`;
+                $('#TongTien1').html(strMoney);
+                $('#TongTien2').html(strMoney2);
+                $('#GioHang').html(str);
+            }
+        });
+    }
+
+    //Lấy các thông tin để trừ
+    function checkValid(maHoaDon) {
+        // Gửi yêu cầu PUT đến API để cập nhật số lượng sản phẩm
+        fetch(`https://localhost:7067/api/GioHangAPI/CheckValid?maHDB=${maHoaDon}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+
+        })
+            .then(response => {
+                if (response.ok) {
+                    response.json().then(data => {
+                        // xử lý dữ liệu trả về khi thành công
+                        $.each(data, function (key, val) {
+                            UpdateQuantityProduct(val.maMonAn, val.soLuong)
+                        });
+                    });
+                }
+            })
+            .catch(error => {
+                alert("Không hợp lệ 2");
+            });
+    }
+
+    //Cập nhật lại số luongj trong csdl
+    function UpdateQuantityProduct(maMonAn, quantity) {
+        // Gửi yêu cầu PUT đến API để cập nhật số lượng sản phẩm
+        fetch(`https://localhost:7067/api/GioHangAPI/UpdateQuantity?maMonAn=${maMonAn}&quantity=${quantity}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('success');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    //Đặt hàng thành công
+    function orderSuccess(maHoaDon) {
+        var inputFullname = document.getElementById('fullName').value;
+        var inputAddress = document.getElementById('address').value;
+        var inputNote = document.getElementById('note').value;
+        var inputPhone = document.getElementById('phone').value;
+        if (inputFullname == "") {
+            alert('không được để trống tên');
+            return;
+        }
+        if (inputAddress == "") {
+            alert('không được để trống địa chỉ');
+            return;
+        }
+        if (inputPhone == "") {
+            alert('không được để trống số điện thoại');
+            return;
+        }
+        if (inputNote == "" || inputNote == null) {
+            inputNote = 'aaa';
+        }
+        fetch(`https://localhost:7067/api/GioHangAPI/orderSuccess?maHDB=${maHoaDon}&diaChi=${inputAddress}&phone=${inputPhone}&nguoiNhan=${inputFullname}&ghiChu=${inputNote}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('success order');
+                checkValid(maHoaDon);
+                alert("Đặt hàng thành công. Bạn sẽ được chuyển về trang chủ");
+                window.location.replace("https://localhost:7067/TrangChu/TrangChu");
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+</script>
+<!-- End Cart -->

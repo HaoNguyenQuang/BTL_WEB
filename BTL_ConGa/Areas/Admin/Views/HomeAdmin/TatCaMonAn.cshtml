@@ -1,0 +1,150 @@
+﻿@*@model IEnumerable<BTL_ConGa.Models.MonAn>*@
+@{
+    ViewData["Title"] = "TaCaMonAn";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@using BTL_ConGa.Models
+@*@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<MonAn>*@
+@model List<MonAn>;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Tất cả món ăn</h5>
+            <p>
+                <a class="btn btn-primary" asp-action="ThemMonAn">Thêm món ăn</a>
+                <a class="btn btn-primary" onclick="CapNhatSoLuong()">Cật nhập số lượng</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered dataTable" id="dataTable"
+                                   width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+                                   style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.TenMonAn)*@
+                                            Mã món ăn
+                                        </th>
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.TenMonAn)*@
+                                            Tên món ăn
+                                        </th>
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.DonGia)*@
+                                            Đơn giá
+
+                                        </th>
+                                        <th>
+                                            Số lượng
+                                        </th>
+                                        @*<th>
+                                            Trạng thái
+                                        </th>*@
+                                        <th>
+                                            @*@Html.DisplayNameFor(model => model.AnhDaiDien)*@
+                                            Ảnh đại điện
+                                        </th>
+                                       @* <th>    
+                                            Số lượng
+                                        </th>*@
+                                        <th>
+                                            @* @Html.DisplayNameFor(model => model.MaDanhMucNavigation)*@
+                                            Danh mục
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MaMonAn)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TenMonAn)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.DonGia)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.SoLuong)
+                                            </td>
+                                            @*<td>
+                                                @Html.DisplayFor(modelItem => item.TrangThai)
+                                            </td>*@
+                                            <td>
+                                                @{
+                                                    string tenthumuc = "";
+                                                    if (item.MaDanhMuc == "DM01")
+                                                        tenthumuc += "ComBo";
+                                                    else if (item.MaDanhMuc == "DM02")
+                                                        tenthumuc += "ThucAnTrua";
+                                                    else if (item.MaDanhMuc == "DM03")
+                                                        tenthumuc += "NuocUong";
+                                                    else if (item.MaDanhMuc == "DM04")
+                                                        tenthumuc += "MonChinh";
+                                                    else
+                                                        tenthumuc += "DongGia";
+                                                }
+                                                <img src="@Url.Content("~/Chicken/images/ThucDon/"+tenthumuc+"/"+item.AnhDaiDien)" alt="" style="width:100px; height:100px" />
+                                                
+                                            </td>
+                                            @*<td>
+                                                @Html.DisplayFor(modelItem => item.SoLuong)
+                                            </td>*@
+                                            <td>
+                                                
+                                                @{
+                                                    var DanhMuc = new BtlWebContext().DanhMucs.Find(item.MaDanhMuc);
+                                                }
+                                                @DanhMuc.TenDanhMuc
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-primary" asp-action="SuaMonAn" asp-route-mamon="@item.MaMonAn">Chỉnh sửa</a>
+                                                <a class="btn btn-primary" asp-action="ChiTietMonAn" asp-route-mamonan="@item.MaMonAn">Chi tiết</a> |
+                                                <a class="btn btn-primary" asp-action="XoaMonAn" asp-route-mamon="@item.MaMonAn">Xóa</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    @*@Html.PagedListPager(Model, page=>Url.Action("TatCaMonAn", new{page=page}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){LiElementClasses = new List<String> {"page-item"},
+                    PageClasses = new List<String> {"page-link"}})*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    function CapNhatSoLuong() {
+
+        var url = 'https://localhost:7067/api/monanapi/capnhatsoluong'
+        $.ajax({
+
+            url: url,
+            method: 'PUT',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Cập nhật không thành công");
+            },
+            success: function (reponse) {
+                alert("Cập nhật thành công");
+                location.reload();
+            }
+        });
+    }
+</script>
+
+

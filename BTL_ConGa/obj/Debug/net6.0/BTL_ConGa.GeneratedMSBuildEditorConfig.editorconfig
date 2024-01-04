@@ -1,0 +1,413 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BTL_ConGa
+build_property.RootNamespace = BTL_ConGa
+build_property.ProjectDir = E:\Tài liệu kỳ 6\BTL_WEB_FINAL\BTL_LTWEB_ChuaCoThien_Thinh\BTL_LTWEB_ChuaCoThien\BTL_LTWEB-main\BTL_LTWEB-main\BTL_ConGa\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Tài liệu kỳ 6\BTL_WEB_FINAL\BTL_LTWEB_ChuaCoThien_Thinh\BTL_LTWEB_ChuaCoThien\BTL_LTWEB-main\BTL_LTWEB-main\BTL_ConGa
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/BaiViet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEJhaVZpZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ChiTietHoaDonBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXENoaVRpZXRIb2FEb25CYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ChiTietMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXENoaVRpZXRNb25Bbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/DanhMucMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERhbmhNdWNNb25Bbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/FeedBack.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEZlZWRCYWNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/HoaDonBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEhvYURvbkJhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/KhachHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEtoYWNoSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/MonAnTheoDanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXE1vbkFuVGhlb0RhbmhNdWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/NhanVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXE5oYW5WaWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/SuaAnh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YUFuaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/SuaBaiViet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YUJhaVZpZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/SuaDanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YURhbmhNdWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/SuaMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YU1vbkFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/SuaMonAnTheoDanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YU1vbkFuVGhlb0RhbmhNdWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/SuaNhanVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YU5oYW5WaWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/SuaVoucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YVZvdWNoZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/TatCaMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRhdENhTW9uQW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ThemBaiViet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1CYWlWaWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ThemDanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1EYW5oTXVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ThemMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1Nb25Bbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ThemNhanVienMoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1OaGFuVmllbk1vaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ThemVoucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1Wb3VjaGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/ThongKe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRob25nS2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/HomeAdmin/Voucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFZvdWNoZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/Shared/Components/DanhMucMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFuaE11Y01lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/Admin/Views/Shared/_PartialMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYXJ0aWFsTW9uQW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/ChiTietHoaDonBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXENoaVRpZXRIb2FEb25CYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/ChiTietMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXENoaVRpZXRNb25Bbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/HoaDonBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXEhvYURvbkJhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/HoaDonBanCuaBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXEhvYURvbkJhbkN1YUJhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/HoSo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXEhvU28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/MonAnTheoDanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXE1vbkFuVGhlb0RhbmhNdWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/HomeNhanVien/TatCaMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcSG9tZU5oYW5WaWVuXFRhdENhTW9uQW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/Shared/Components/DanhMucMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFuaE11Y01lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/Shared/_LayoutNhanVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcU2hhcmVkXF9MYXlvdXROaGFuVmllbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Areas/NhanVien/Views/Shared/_PartialMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTmhhblZpZW5cVmlld3NcU2hhcmVkXF9QYXJ0aWFsTW9uQW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/BaiViet/BaiViet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpVmlldFxCYWlWaWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/BaiViet/ChiTietBaiViet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpVmlldFxDaGlUaWV0QmFpVmlldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxjYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxjaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/contact_us.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxjb250YWN0X3VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxnYWxsZXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/my_account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxteV9hY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxzaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/shop_detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblxzaG9wX2RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Chicken/wishlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpY2tlblx3aXNobGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/ChiTietSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXENoaVRpZXRTYW5QaGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/ComBo/CanhGaSotNguVi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXENvbUJvXENhbmhHYVNvdE5ndVZpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/ComBo/ComBoBurger.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXENvbUJvXENvbUJvQnVyZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/ComBo/ComBoMyY.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXENvbUJvXENvbUJvTXlZLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/DongGia/BanhXepTom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXERvbmdHaWFcQmFuaFhlcFRvbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/DongGia/MienCuonRongBien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXERvbmdHaWFcTWllbkN1b25Sb25nQmllbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/MonChinh/CanhGaSotCayChayLuoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXE1vbkNoaW5oXENhbmhHYVNvdENheUNoYXlMdW9pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/MonChinh/CanhGaSotNguVi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXE1vbkNoaW5oXENhbmhHYVNvdE5ndVZpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/NuocUong/Coca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXE51b2NVb25nXENvY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/NuocUong/Dasani.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXE51b2NVb25nXERhc2FuaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/ThucAnTrua/ComDuiGaSotNguVi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXFRodWNBblRydWFcQ29tRHVpR2FTb3ROZ3VWaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ChiTietMonAn/ThucAnTrua/ComGaKhongXuongSotNguVi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldE1vbkFuXFRodWNBblRydWFcQ29tR2FLaG9uZ1h1b25nU290Tmd1VmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/GioHang/GioHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ1xHaW9IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/GioHang/ThanhToan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ1xUaGFuaFRvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/KhuyenMai/ChiTietKhuyenMai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2h1eWVuTWFpXENoaVRpZXRLaHV5ZW5NYWkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/KhuyenMai/KhuyenMai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2h1eWVuTWFpXEtodXllbk1haS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/MonAnYeuThich/wishlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uQW5ZZXVUaGljaFx3aXNobGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/Components/DanhMucMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFuaE11Y01lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/PatialFooter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhdGlhbEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/PatialHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhdGlhbEhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/_LayoutChicken.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDaGlja2VuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/_SanPhamNoiBat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TYW5QaGFtTm9pQmF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TaiKhoan/ChiTietTaiKhoan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cQ2hpVGlldFRhaUtob2FuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TaiKhoan/DangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGFuZ0t5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TaiKhoan/DangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGFuZ05oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TaiKhoan/DoiMatKhau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRG9pTWF0S2hhdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TaiKhoan/LichSuDatHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cTGljaFN1RGF0SGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TaiKhoan/LichSuDatHangChoXacNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cTGljaFN1RGF0SGFuZ0Nob1hhY05oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TaiKhoan/TaiKhoan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cVGFpS2hvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThongTin/DiaChiNhaHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdUaW5cRGlhQ2hpTmhhSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThongTin/GioiThieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdUaW5cR2lvaVRoaWV1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThongTin/LienHe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdUaW5cTGllbkhlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThucDon/ComBo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1Y0RvblxDb21Cby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThucDon/DongGia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1Y0RvblxEb25nR2lhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThucDon/MonAnTheoDanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1Y0RvblxNb25BblRoZW9EYW5oTXVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThucDon/MonChinh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1Y0RvblxNb25DaGluaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThucDon/NuocUong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1Y0RvblxOdW9jVW9uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/ThucDon/ThucAnTrua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1Y0RvblxUaHVjQW5UcnVhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/TrangChu/TrangChu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdDaHVcVHJhbmdDaHUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tài liệu kỳ 6/BTL_WEB_FINAL/BTL_LTWEB_ChuaCoThien_Thinh/BTL_LTWEB_ChuaCoThien/BTL_LTWEB-main/BTL_LTWEB-main/BTL_ConGa/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lbfm7ho925

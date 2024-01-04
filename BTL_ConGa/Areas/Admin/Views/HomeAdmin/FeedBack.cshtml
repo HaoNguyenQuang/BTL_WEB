@@ -1,0 +1,171 @@
+﻿@*@model IEnumerable<BTL_ConGa.Models.Feedback>*@
+@using BTL_ConGa.Models;
+@{
+    ViewData["Title"] = "FeedBack";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<Feedback>*@
+@model List<Feedback>
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">FeedBack</h5>
+            @*<p>
+            <a asp-action="Create"></a>
+            </p>*@
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered dataTable" id="dataTable"
+                                   width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+                                   style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Mã FeedBack
+                                        </th>
+                                        <th>
+                                            Họ tên người FeedBack
+                                        </th>
+                                        <th>
+                                            Email
+                                        </th>
+                                        <th>
+                                            Số điện thoại
+                                        </th>
+                                        <th>
+                                            Nội dung
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Mafeedback)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.HoTen)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Email)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.SoDienThoai)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NoiDung)
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-primary" @*asp-action=""*@ onclick="document.getElementById('@item.Mafeedback').style.display='block'" asp-route-id="@item.Mafeedback">Xóa</a>
+                                                <div id="@item.Mafeedback" class="w3-modal">
+
+                                                    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                                        <header class="w3-container w3-blue" style="padding:2px 16px 2px 16px; height:50px">
+                                                            <span onclick="document.getElementById('@item.Mafeedback').style.display='none'"
+                                                              class="w3-button w3-blue w3-xlarge w3-display-topright" style="height:50px">&times;</span>
+                                                            <h2>Thông báo!</h2>
+                                                        </header>
+                                                        <h5 class="m-0 font-weight-bold text-primary">Bạn có muốn xóa FeedBack </h5>
+                                                        <div class="col-sm-12" style="padding-left:51px">
+                                                            <dl class="row">
+                                                                <dt class="col-sm-2">
+                                                                    Mã FeedBack
+                                                                </dt>
+                                                                <dd class="col-sm-10">
+                                                                    @item.Mafeedback
+                                                                </dd>
+                                                                <dt class="col-sm-2">
+                                                                    Họ và tên
+                                                                </dt>
+                                                                <dd class="col-sm-10">
+                                                                    @item.HoTen
+                                                                </dd>
+                                                                <dt class="col-sm-2">
+                                                                    Email
+                                                                </dt>
+                                                                <dd class="col-sm-10">
+                                                                    @item.Email
+                                                                </dd>
+                                                                <dt class="col-sm-2">
+                                                                    Số điện thoại
+                                                                </dt>
+                                                                <dd class="col-sm-10">
+                                                                    @item.SoDienThoai
+                                                                </dd>
+                                                                <dt class="col-sm-2">
+                                                                    Nội dung
+                                                                </dt>
+                                                                <dd class="col-sm-10">
+                                                                    @item.NoiDung
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+
+                                                        <div class="w3-container w3-light-grey w3-padding">
+                                                            <button class="btn btn-primary w3-right"
+                                                                onclick="document.getElementById('@item.Mafeedback').style.display='none'" style="margin-left:20px">
+                                                                Không
+                                                            </button>
+                                                            <button class="btn btn-primary w3-right"
+                                                                onclick="deleteFeedBack('@item.Mafeedback')">
+                                                                Có
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script>
+
+                                                    // Get the modal
+                                                    var modal = document.getElementById('@item.Mafeedback');
+
+                                                    // When the user clicks anywhere outside of the modal, close it
+                                                    window.onclick = function (event) {
+                                                        if (event.target == modal) {
+                                                            modal.style.display = "none";
+                                                        }
+                                                    }
+                                                </script>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    @*@Html.PagedListPager(Model, page=>Url.Action("FeedBack", new{page=page}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){LiElementClasses = new List<String> {"page-item"},
+                    PageClasses = new List<String> {"page-link"}})*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function deleteFeedBack(mafeedback) {
+        var url = 'https://localhost:7067/api/feedbackapi?mafeedback=' + mafeedback;
+        $.ajax({
+            url: url,
+            method: 'DELETE',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Xóa không thành công")
+            },
+            success: function (reponse) {
+                alert("Xóa thành công");
+                document.getElementById('' + mafeedback).style.display = 'none'
+                location.reload();
+            }
+        });
+    }
+
+</script>

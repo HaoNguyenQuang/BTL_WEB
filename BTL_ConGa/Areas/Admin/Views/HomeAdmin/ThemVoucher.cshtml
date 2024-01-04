@@ -1,0 +1,216 @@
+﻿@model BTL_ConGa.Models.Voucher
+
+@{
+    ViewData["Title"] = "ThemVoucher";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Thêm Voucher</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form asp-action="ThemVoucher">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                    @{
+                                        int lastid = ViewBag.lastId;
+                                        string id = "";
+                                        if (lastid > 8)
+                                            id = "VC" + (lastid + 1).ToString();
+                                        else
+                                            id = "VC0" + (lastid + 1).ToString();
+                                    }
+                                    <label class="control-label"> Mã voucher</label>
+                                    <input id="MaVoucher" disabled value="@id" class="form-control" />
+                                    <span asp-validation-for="MaVoucher" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tên voucher</label>
+                                    <input id="TenVoucher" oninput="checkTen()" class="form-control" />
+                                    <span asp-validation-for="TenVoucher" class="text-danger"></span>
+                                    <span id="TenVoucherError" class="invalid-feedback">Tên voucher không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Phần trăm</label>
+                                    <input id="PhanTram" oninput="checkPhanTram()" type="number" class="form-control" />
+                                    <span asp-validation-for="PhanTram" class="text-danger"></span>
+                                    <span id="phantramVoucherError" class="invalid-feedback">Phần trăm không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Số lượng</label>
+                                    <input id="SoLuong" type="number" oninput="checkSoLuong()" class="form-control" />
+                                    <span asp-validation-for="SoLuong" class="text-danger"></span>
+                                    <span id="soluongVoucherError" class="invalid-feedback">Số lượng không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Ngày bắt đầu</label>
+                                    <input id="NgayBatDau" type="date" oninput="checkNgayBatDau()" class="form-control" />
+                                    <span asp-validation-for="NgayBatDau" class="text-danger"></span>
+                                    <span id="ngaybatdauVoucherError" class="invalid-feedback">Ngày bắt đầu không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Ngày kết thúc</label>
+                                    <input id="NgayKetThuc" type="date" oninput="checkNgayKetThuc(), updateAnh()" class="form-control" />
+                                    <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
+                                    <span id="ngayketthucVoucherError" class="invalid-feedback">Ngày kết thúc không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <input onclick="ThemVoucher()" value="Thêm voucher" class="btn btn-primary" />
+                                    <a asp-action="Voucher" class="btn btn-primary">Quay lại</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .is-invalid {
+        border-color: #dc3545 !important;
+    }
+
+    .invalid-feedback {
+        display: none;
+        color: #dc3545;
+    }
+</style>
+<script type="text/javascript">
+
+    function ThemVoucher() {
+        var MaVoucher = document.getElementById("MaVoucher").value;
+        var TenVoucher = document.getElementById("TenVoucher").value;
+        var PhanTram = document.getElementById("PhanTram").value;
+        var SoLuong = document.getElementById("SoLuong").value;
+        var NgayBatDau = document.getElementById("NgayBatDau").value;
+        var NgayKetThuc = document.getElementById("NgayKetThuc").value;
+
+        var url = 'https://localhost:7067/api/voucherapi?MaVoucher=' + MaVoucher
+            + '&TenVoucher=' + TenVoucher
+            + '&PhanTram=' + PhanTram
+            + '&SoLuong=' + SoLuong
+            + '&NgayBatDau=' + NgayBatDau
+            + '&NgayKetThuc=' + NgayKetThuc;
+        $.ajax({
+            url: url,
+            method: 'POST',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                checkTen();
+                checkPhanTram();
+                checkSoLuong();
+                checkNgayBatDau();
+                checkNgayKetThuc();
+            },
+            success: function (reponse) {
+                if (checkTen() == true && checkPhanTram() == true && checkSoLuong() == true && checkNgayBatDau() == true && checkNgayKetThuc() == true) {
+                    alert("Thêm mới thành công");
+                    window.location.href = 'https://localhost:7067/admin/voucher';
+                }
+                else {
+                    alert("Thêm không thành công. Cần nhập chính xác thông tin");
+                }
+
+            }
+        });
+    }
+
+
+    function checkTen() {
+        var tenVoucher = document.getElementById("TenVoucher");
+        var phantram = document.getElementById("PhanTram");
+        if (tenVoucher.value == "") {
+            tenVoucher.classList.add("is-invalid");
+            document.getElementById("TenVoucherError").style.display = "block";
+            return false;
+        }
+        tenVoucher.classList.remove("is-invalid");
+        document.getElementById("TenVoucherError").style.display = "none";
+        return true;
+
+    }
+    function checkPhanTram() {
+        var phantram = document.getElementById("PhanTram");
+
+        if (phantram.value == "") {
+            phantram.classList.add("is-invalid");
+            document.getElementById("phantramVoucherError").style.display = "block";
+            return false;
+        }
+        let so = parseInt(phantram.value);
+        if (so > 100 || so < 0) {
+            ngaybatdau.classList.add("is-invalid");
+            document.getElementById("phantramVoucherError").innerHTML = "Phần trăm không được lớn hơn 100 hoặc không âm";
+            document.getElementById("phantramVoucherError").style.display = "block";
+            return false;
+        }
+        phantram.classList.remove("is-invalid");
+        document.getElementById("phantramVoucherError").style.display = "none";
+        return true;
+    }
+    function checkSoLuong() {
+        var soluong = document.getElementById("SoLuong");
+        if (soluong.value == "") {
+            soluong.classList.add("is-invalid");
+            document.getElementById("soluongVoucherError").style.display = "block";
+            return false;
+        }
+        soluong.classList.remove("is-invalid");
+        document.getElementById("soluongVoucherError").style.display = "none";
+        return true;
+    }
+    function checkNgayBatDau() {
+        var ngaybatdau = document.getElementById("NgayBatDau");
+        var ngayketthuc = document.getElementById("NgayKetThuc");
+        if (ngaybatdau.value == "") {
+            ngaybatdau.classList.add("is-invalid");
+            document.getElementById("ngaybatdauVoucherError").style.display = "block";
+            return;
+        }
+        if (ngayketthuc.value != "") {
+            if (ngaybatdau.value > ngayketthuc.value) {
+                ngaybatdau.classList.add("is-invalid");
+                document.getElementById("ngaybatdauVoucherError").innerHTML = "Ngày bắt đầu phải nhỏ hơn ngày kết thúc";
+                document.getElementById("ngaybatdauVoucherError").style.display = "block";
+                return false;
+            }
+            ngaybatdau.classList.remove("is-invalid");
+            document.getElementById("ngaybatdauVoucherError").style.display = "none";
+            return true;
+        }
+        ngaybatdau.classList.remove("is-invalid");
+        document.getElementById("ngaybatdauVoucherError").style.display = "none";
+        return true;
+    }
+    function checkNgayKetThuc() {
+        var ngaybatdau = document.getElementById("NgayBatDau");
+        var ngayketthuc = document.getElementById("NgayKetThuc");
+        if (ngayketthuc.value == "") {
+            ngayketthuc.classList.add("is-invalid");
+            document.getElementById("ngayketthucVoucherError").style.display = "block";
+            return false
+        }
+        if (ngaybatdau.value > ngayketthuc.value) {
+            ngaybatdau.classList.add("is-invalid");
+            document.getElementById("ngaybatdauVoucherError").innerHTML = "Ngày bắt đầu phải nhỏ hơn ngày kết thúc";
+            document.getElementById("ngaybatdauVoucherError").style.display = "block";
+            return false;
+        }
+        ngaybatdau.classList.remove("is-invalid");
+        document.getElementById("ngaybatdauVoucherError").style.display = "none";
+
+        ngayketthuc.classList.remove("is-invalid");
+        document.getElementById("ngayketthucVoucherError").style.display = "none";
+        return true;
+    }
+</script>

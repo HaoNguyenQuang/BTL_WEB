@@ -1,0 +1,146 @@
+﻿<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Chi tiết tài khoản</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Tài khoản của tôi</a></li>
+                    <li class="breadcrumb-item active">Chi tiết tài khoản</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<div class="cart-box-main">
+    <div class="container">
+        <div class="row new-account-login">
+            <div class="col-sm-12 col-lg-6 mb-3" style="float: right;">
+                <div class="title-left">
+                    <h5>Chi tiết tài khoản</h5>
+                </div>
+
+                <form class="mt-3 review-form-box" id="contactForm">
+                    <div class="form-row">
+
+                        <div class="form-group col-md-12" style="padding: 0px;">
+                            <label for="InputName" class="mb-0">Họ Và Tên</label>
+                            <input type="text" class="form-control" id="InputName" name="name" placeholder="Họ" required data-error="Bạn chưa nhập họ tên" value="@ViewBag.Name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-md-12" style="padding: 0px;">
+                            <label for="InputPhone" class="mb-0">Số điện thoại</label>
+                            <input type="text" class="form-control" id="InputPhone" placeholder="Số điện thoại" required data-error="Bạn chưa nhập số điện thoại" value="@ViewBag.Phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-md-12" style="padding: 0px;">
+                            <label for="InputContry" class="mb-0">Địa chỉ</label>
+                            <input type="text" class="form-control" id="InputAddress" placeholder="Địa chỉ" required data-error="Bạn chưa nhập số địa chỉ" value="@ViewBag.Address">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-md-12" style="padding: 0px;">
+                            <label for="InputEmail" class="mb-0">Email</label>
+                            <input type="email" class="form-control" id="InputEmail" placeholder="Email" required data-error="Bạn chưa nhập email" value="@ViewBag.Email">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-md-12" style="padding: 0px;">
+                            <label for="Gioi-Tinh" class="mb-0">Giới tính</label>
+                            <select id="Gioi-Tinh" name="Gioi-Tinh" class="form-control" type="text" required data-error="Bạn chưa chọn giới tính">
+                                @if (@ViewBag.Gender == "Nam")
+                                {
+                                    <option value=""></option>
+                                    <option value="Nam" selected>Nam</option>
+                                    <option value="Nu">Nữ</option>
+                                }
+                                else
+                                {
+                                    <option value=""></option>
+                                    <option value="Nam">Nam</option>
+                                    <option value="Nu" selected>Nữ</option>
+                                }
+
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group test col-md-12 " style="padding: 0px;">
+                            <label for="InputEmail1" class="mb-0">Ngày sinh</label>
+                            <input type="date" class="form-control" id="InputDate" placeholder="Ngày sinh" required data-error="Bạn chưa chọn ngày sinh" value="@ViewBag.Birth">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class=" form-group col-md-12" style="padding: 0px;">
+                            <div class="submit-button text-center">
+                                <button class="btn hvr-hover" id="submit" onclick="editKhachHang();">Cập nhật thông tin</button>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    //Hàm lấy Thêm mới Khách hàng. Dùng $.ajax() thực hiện method HTTP POST
+    function editKhachHang() {
+        var id = "@ViewBag.IDCustomer";
+        var hotenValue = document.getElementById("InputName").value;
+        var sodienthoaiValue = document.getElementById("InputPhone").value;
+        var diachiValue = document.getElementById("InputAddress").value;
+        var emailValue = document.getElementById("InputEmail").value;
+        var gioitinhValue = document.getElementById("Gioi-Tinh").value;
+        var ngaysinhValue = document.getElementById("InputDate").value;
+        if(gioitinhValue == "Nu")
+        {
+            gioitinhValue = "Nữ";
+        }
+        //console.log(id);
+        //console.log(hotenValue);
+        //console.log(sodienthoaiValue);
+        //console.log(diachiValue);
+        //console.log(emailValue);
+        //console.log(gioitinhValue);
+        //console.log(ngaysinhValue);
+
+        var url = 'https://localhost:7067/api/taikhoanapi/CapNhatKhachHang?makhach=' + id +
+            '&hovaten=' + hotenValue +
+            '&sodienthoai=' + sodienthoaiValue +
+            '&diachi=' + diachiValue +
+            '&email=' + emailValue +
+            '&gioitinh=' + gioitinhValue +
+            '&ngaysinh=' + ngaysinhValue;
+        $.ajax({
+            url: url,
+            method: 'PUT',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Sửa không thành công");
+            },
+            success: function (reponse) {
+                alert("Cập nhật thành công");
+            }
+        });
+    }
+</script>

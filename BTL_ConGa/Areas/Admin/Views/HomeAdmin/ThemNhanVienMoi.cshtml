@@ -1,0 +1,163 @@
+﻿@{
+    ViewData["Title"] = "ThemNhanVienMoi";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    int lastid = ViewBag.lastId;
+    string id = "";
+    if (lastid >= 10)
+        id = "NV" + (lastid + 1).ToString();
+    else
+        id = "NV0" + (lastid + 1).ToString();
+}
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Thông tin của bạn</h5>
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- Viết vào đây -->
+                            <!-- Cục trái -->
+                            <div class="col-md-5" style="display:inline-block; margin-left:5%; margin-right:5%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <form class="forms-sample">
+                                            @*Mã nhân viên *@
+                                            <div class="form-group">
+                                                <label for="exampleInputUsername1">Mã nhân viên</label>
+                                                <input type="text" class="form-control" value="@id" id="inputMaNhanVien" disabled placeholder="Mã nhân viên">
+                                            </div>
+                                            @*Tên nhân viên *@
+                                            <div class="form-group">
+                                                <label for="exampleInputUsername1">Tên nhân viên</label>
+                                                <input type="text" class="form-control" id="inputTenNhanVien" placeholder="Tên nhân viên">
+                                            </div>
+                                            @*Địa chỉ*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Địa chỉ</label>
+                                                <input type="text" class="form-control" id="inputDiaChi" placeholder="Địa chỉ">
+                                            </div>
+                                            @*Ngày sinh*@
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Ngày sinh</label>
+                                                <input type="date" class="form-control" id="inputNgaySinh" placeholder="Ngày sinh">
+                                            </div>
+                                            @*Email*@
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                            </div>
+                                            @*Số điện thoại*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Số điện thoại</label>
+                                                <input type="tel" class="form-control" id="inputSoDienThoai" placeholder="Số điện thoại">
+                                            </div>
+
+                                            @*Giới tính*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Giới tính</label>
+                                                <select type="text" class="form-control" id="inputGioiTinh" placeholder="Giới tính">
+                                                    <option>Nam</option>
+                                                    <option>Nữ</option>
+                                                </select>
+                                            </div>
+                                            @*Tài khoản*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Tài khoản</label>
+                                                <input type="text" class="form-control" value="@id" disabled id="inputTaiKhoan" placeholder="Tài khoản">
+                                            </div>
+                                            @*Mật khẩu*@
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Mật khẩu</label>
+                                                <input type="text" class="form-control" id="inputMatKhau" placeholder="Mật khẩu">
+                                            </div>
+
+                                            @*Button*@
+                                            <button class="btn btn-primary" onclick="ThemNhanVienMoi()">Thêm</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hết trái -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Thêm nhân viên -->
+    <script type="text/javascript">
+    function ThemNhanVienMoi() {
+
+        var manhanvien = document.getElementById("inputMaNhanVien").value;
+        var tennhanvien = document.getElementById("inputTenNhanVien").value;
+        var diachi = document.getElementById("inputDiaChi").value;
+        var ngaysinh = document.getElementById("inputNgaySinh").value;
+        var email = document.getElementById("inputEmail").value;
+        var sodienthoai = document.getElementById("inputSoDienThoai").value;
+        var gioitinh = document.getElementById("inputGioiTinh").value;
+        var taikhoan = document.getElementById("inputTaiKhoan").value;
+        var matkhau = document.getElementById("inputMatKhau").value;
+        if (tennhanvien == "") {
+            alert("Không được để tên nhân viên trống")
+            return;
+        }
+        if (diachi == "") {
+            alert("Không được để địa chỉ trống")
+            return;
+        }
+        if (ngaysinh == "") {
+            alert("Không được để ngày sinh trống")
+            return;
+        }
+        if (email == "") {
+            alert("Không được để email trống")
+            return;
+        }
+        if (sodienthoai == "") {
+            alert("Không được để số điện thoại trống")
+            return;
+        }
+        if (matkhau == "") {
+            alert("Không được để mật khẩu trống")
+            return;
+        }
+        // regex
+        var regexPhoneNumber = /(((\+|)84)|0)(3|5|7|8|9)+([0-9]{8})\b/;
+        if (!sodienthoai.match(regexPhoneNumber)) {
+            alert("Định dạng số điện thoại sai")
+            return;
+        }
+        var regexEmail = /^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!email.match(regexEmail)) {
+            alert("Định dạng email sai")
+            return;
+        }
+        url = 'https://localhost:7067/api/NhanVienAPI/ThemNhanVien?MaNhanVien=' + manhanvien + '&TenNhanVien=' + tennhanvien + '&diachi=' + diachi +
+            '&ngaysinh=' + ngaysinh + '&email=' + email + '&sodienthoai=' + sodienthoai + '&gioitinh=' + gioitinh + '&taikhoan=' + taikhoan + '&matkhau=' + matkhau;
+
+        console.log(url);
+        $.ajax({
+            url: url,
+            method: 'POST',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Thêm không thành công");
+            },
+            success: function (reponse) {
+                alert("Thêm thành công");
+                window.location.replace("https://localhost:7067/admin/homeadmin/nhanvien");
+            }
+        });
+    }
+</script>

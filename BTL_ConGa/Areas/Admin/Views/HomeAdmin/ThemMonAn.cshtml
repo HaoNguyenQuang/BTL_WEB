@@ -1,0 +1,701 @@
+﻿@model BTL_ConGa.Models.MonAn
+
+@{
+    ViewData["Title"] = "ThemMonAn";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-primary">Thêm món ăn</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="row">
+						@{
+							int lastid = ViewBag.lastId;
+							string id = "";
+							if (lastid > 8)
+								id = "MA" + (lastid + 1).ToString();
+							else
+								id = "MA0" + (lastid + 1).ToString();
+
+                            int lastidanh = ViewBag.lastIdAnh;
+							string idanh1 = "";
+							string idanh2 = "";
+							string idanh3 = "";
+                            if (lastidanh > 8)
+							{
+                                idanh1 = "A" + (lastidanh + 1).ToString();
+								idanh2 = "A" + (lastidanh + 2).ToString();
+								idanh3 = "A" + (lastidanh + 3).ToString();
+							}
+							else
+							{
+								idanh1 = "A0" + (lastidanh + 1).ToString();
+								idanh2 = "A0" + (lastidanh + 2).ToString();
+								idanh3 = "A0" + (lastidanh + 3).ToString();
+							}
+						}
+                        <div class="col-sm-12">
+                             <form asp-action="ThemMonAn">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                
+                                <div class="form-group">
+                                    <label class="control-label">Mã món ăn</label>
+                                    <input id="MaMonAn" disabled value="@id" class="form-control" />
+                                    <span asp-validation-for="MaMonAn" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label"> Tên món ăn</label>
+                                    <input id="TenMonAn" oninput="checktenmonan()" class="form-control" />
+                                    <span asp-validation-for="TenMonAn" class="text-danger"></span>
+                                    <span id="tenmonanError1" class="invalid-feedback">Tên ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="control-label">Đơn giá</label>
+                                    <input id="DonGia" type="number" oninput="checkdongia()" class="form-control" />
+                                    <span asp-validation-for="DonGia" class="text-danger"></span>
+                                    <span id="dongiaError1" class="invalid-feedback">Đơn giá không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="control-label">Mô tả</label>
+                                    <input id="MoTa" oninput="checkmota()" class="form-control" />
+                                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                                    <span id="motaError1" class="invalid-feedback">Mô tả không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="control-label">Trang thái</label>
+                                    <select id="TrangThai" class="form-control" asp-items="ViewBag.TrangThai"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="control-label">Ảnh đại diện</label>
+                                    <input id="AnhDaiDien" type="file" oninput="checkanhdaidien()"/>
+                                    <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
+                                    <span id="anhdaidienError1" class="invalid-feedback">Ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <img id="AnhChinh" src="" alt="" style="width:100px; height:100px;display:none" />
+                                </div>
+                                <div class="form-group">
+                                    <label  class="control-label">Số lượng</label>
+                                    <input id="SoLuong" type="number" oninput="checksoluong()" class="form-control" />
+                                    <span asp-validation-for="SoLuong" class="text-danger"></span>
+                                    <span id="soluongError1" class="invalid-feedback">Số lượng không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="MaDanhMuc" class="control-label">Mã danh mục</label>
+                                    <select id="DanhMuc" asp-for="MaDanhMuc" class ="form-control" asp-items="ViewBag.MaDanhMuc"></select>
+                                </div>
+                                
+							</form>
+                            <div class="form-group">
+								<label class="control-label">Ảnh chi tiết</label>
+							</div>
+                         </div>
+                         
+                        <div class="col-sm-4">
+                            <form method="Post" asp-action="">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Mã ảnh</label>
+                                    <input id="MaAnh1" class="form-control" disabled value="@idanh1" />
+                                    <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tên ảnh</label>
+                                    <input id="TenAnh1" oninput="checktenanh1()" class="form-control" value="" />
+                                    <span class="text-danger"></span>
+                                    <span id="tenanhError1" class="invalid-feedback">Tên ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Hình ảnh</label>
+                                    <input id="HinhAnh1" oninput="checkhinhanh1()" type="file" />
+                                    <span class="text-danger"></span>
+                                    <span id="hinhanhError1" class="invalid-feedback">Hình ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <img id="Anh1" src="" alt="" style="width:100px; height:100px;display:none" />
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="col-sm-4">
+                            <form method="Post" asp-action="">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label class="control-label" >Mã ảnh</label>
+									<input id="MaAnh2" class="form-control" disabled value="@idanh2" />
+                                    <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tên ảnh</label>
+                                    <input id="TenAnh2" oninput="checktenanh2()" class="form-control"  />
+                                    <span class="text-danger"></span>
+                                    <span id="tenanhError2" class="invalid-feedback">Tên ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Hình ảnh</label>
+                                    <input id="HinhAnh2" oninput="checkhinhanh2()" type="file" />
+                                    <span class="text-danger"></span>
+                                    <span id="hinhanhError2" class="invalid-feedback">Hình ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <img id="Anh2" src="" alt="" style="width:100px; height:100px; display:none" />
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="col-sm-4">
+                            <form method="Post" asp-action="">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Mã ảnh</label>
+                                    <input id="MaAnh3" class="form-control" disabled value="@idanh3" />
+                                    <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Tên ảnh</label>
+                                    <input id="TenAnh3" oninput="checktenanh3()" class="form-control" value="" />
+                                    <span class="text-danger"></span>
+                                    <span id="tenanhError3" class="invalid-feedback">Tên ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Hình ảnh</label>
+                                    <input id="HinhAnh3" oninput="checkhinhanh3()" type="file" />
+                                    <span class="text-danger"></span>
+                                    <span id="hinhanhError3" class="invalid-feedback">Hình ảnh không được bỏ trống</span>
+                                </div>
+                                <div class="form-group">
+                                    <img id="Anh3" src="" alt="" style="width:100px; height:100px;display:none" />
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="form-group">
+                            <input onclick="ThemMonAn()" value="Thêm món ăn" class="btn btn-primary" />
+                            <a class="btn btn-primary" asp-action="TatCaMonAn">Quay lại</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .is-invalid {
+        border-color: #dc3545 !important;
+    }
+
+    .invalid-feedback {
+        display: none;
+        color: #dc3545;
+    }
+</style>
+
+
+<script>
+    function checkdanhmuc(danhmuc) 
+    {
+        var tenthumuc1 = "";
+        if (danhmuc == "DM01")
+            tenthumuc1 = "ComBo";
+        else if (danhmuc == "DM02")
+            tenthumuc1 = "ThucAnTrua";
+        else if (danhmuc == "DM03")
+            tenthumuc1 = "NuocUong";
+        else if (danhmuc == "DM04")
+            tenthumuc1 = "MonChinh";
+        else
+            tenthumuc1 = "DongGia";
+
+        return tenthumuc1;
+    }
+</script>
+
+
+
+<script>
+
+    function checkanhdaidien() {
+        var anhdaidien = document.getElementById("AnhDaiDien");
+        if (anhdaidien.value != "") {
+            //hinhanh1.classList.remove("is-invalid");
+            //document.getElementById("AnhError").style.display = "none";
+
+            var anh = anhdaidien.value.split(/[\\|/]/);
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('AnhChinh');
+            var danhmuc = document.getElementById('DanhMuc');
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/LuuAnhVaoFoderKhiChonAnh",
+                data: { anhchinh: anhchinh + "\\" + checkdanhmuc(danhmuc.value) },
+                success: function (response) {
+                    image.style.display = "block";
+                    image.src = "/Chicken/images/ThucDon/" + checkdanhmuc(danhmuc.value) + "/" + anhchinh;
+
+                }
+            });
+            anhdaidien.classList.remove("is-invalid");
+            document.getElementById("anhdaidienError1").style.display = "none";
+            return true;
+        }
+        else
+        {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("anhdaidienError1").style.display = "block";
+            return false;
+        }
+        //return true;
+
+    }
+
+</script>
+
+
+
+<script>
+    
+    function checktenanh1() {
+        var tenanh1 = document.getElementById("TenAnh1");
+        if (tenanh1.value == "") {
+            tenanh1.classList.add("is-invalid");
+            document.getElementById("tenanhError1").style.display = "block";
+            return false;
+        }
+        tenanh1.classList.remove("is-invalid");
+        document.getElementById("tenanhError1").style.display = "none";
+        return true;
+
+    }
+
+    function checktenanh11(){
+        var anhdaidien = document.getElementById("TenAnh1");
+        if (anhdaidien.value == "") {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("tenanhError1").style.display = "block";
+            return false;
+        }
+        anhdaidien.classList.remove("is-invalid");
+        document.getElementById("tenanhError1").style.display = "none";
+        return true;
+    }
+
+    function checkhinhanh1() {
+        var hinhanh1 = document.getElementById("HinhAnh1");
+        if (hinhanh1.value != "") {
+            //hinhanh1.classList.remove("is-invalid");
+            //document.getElementById("AnhError").style.display = "none";
+
+            var anh = hinhanh1.value.split(/[\\|/]/);
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('Anh1');
+            var danhmuc = document.getElementById('DanhMuc');
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/LuuAnhVaoFoderKhiChonAnh",
+                data: { anhchinh: anhchinh + "\\" + checkdanhmuc(danhmuc.value) },
+                success: function (response) {
+                    image.style.display = "block";
+                    image.src = "/Chicken/images/ThucDon/" + checkdanhmuc(danhmuc.value) + "/" + anhchinh;
+                    
+                }
+            });
+            hinhanh1.classList.remove("is-invalid");
+            document.getElementById("hinhanhError1").style.display = "none";
+            return true;
+        }
+        else
+        {
+            hinhanh1.classList.add("is-invalid");
+            document.getElementById("hinhanhError1").style.display = "block";
+            return false;
+        }
+        //return true;
+
+    }
+
+    function checkanhchietiet1() 
+    {
+        var anhdaidien = document.getElementById("HinhAnh1");
+        if (anhdaidien.value == "") {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("hinhanhError1").style.display = "block";
+            return false;
+        }
+        anhdaidien.classList.remove("is-invalid");
+        document.getElementById("hinhanhError1").style.display = "none";
+        return true;
+    }
+</script>
+
+
+<script>
+
+    function checktenanh2() {
+        var tenanh2 = document.getElementById("TenAnh2");
+        if (tenanh2.value == "") {
+            tenanh2.classList.add("is-invalid");
+            document.getElementById("tenanhError2").style.display = "block";
+            return false;
+        }
+        tenanh2.classList.remove("is-invalid");
+        document.getElementById("tenanhError2").style.display = "none";
+        return true;
+
+    }
+
+    function checktenanh22() {
+        var anhdaidien = document.getElementById("TenAnh2");
+        if (anhdaidien.value == "") {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("tenanhError2").style.display = "block";
+            return false;
+        }
+        anhdaidien.classList.remove("is-invalid");
+        document.getElementById("tenanhError2").style.display = "none";
+        return true;
+    }
+    function checkhinhanh2() {
+        var hinhanh2 = document.getElementById("HinhAnh2");
+        if (hinhanh2.value != "") {
+            //hinhanh1.classList.remove("is-invalid");
+            //document.getElementById("AnhError").style.display = "none";
+
+            var anh = hinhanh2.value.split(/[\\|/]/);
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('Anh2');
+            var danhmuc = document.getElementById('DanhMuc');
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/LuuAnhVaoFoderKhiChonAnh",
+                data: { anhchinh: anhchinh + "\\" + checkdanhmuc(danhmuc.value)},
+                success: function (response) {
+                    image.style.display = "block";
+                    image.src = "/Chicken/images/ThucDon/" + checkdanhmuc(danhmuc.value) + "/" + anhchinh;
+                    
+                }
+            });
+            hinhanh2.classList.remove("is-invalid");
+            document.getElementById("hinhanhError2").style.display = "none";
+            return true;
+        }
+        else {
+            hinhanh2.classList.add("is-invalid");
+            document.getElementById("hinhanhError2").style.display = "block";
+            return false;
+        }
+
+    }
+    function checkanhchietiet2() {
+        var anhdaidien = document.getElementById("HinhAnh2");
+        if (anhdaidien.value == "") {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("hinhanhError2").style.display = "block";
+            return false;
+        }
+        anhdaidien.classList.remove("is-invalid");
+        document.getElementById("hinhanhError2").style.display = "none";
+        return true;
+    }
+</script>
+
+
+<script>
+
+    function checktenanh3() {
+        var tenanh3 = document.getElementById("TenAnh3");
+        if (tenanh3.value == "") {
+            tenanh3.classList.add("is-invalid");
+            document.getElementById("tenanhError3").style.display = "block";
+            return false;
+        }
+        tenanh3.classList.remove("is-invalid");
+        document.getElementById("tenanhError3").style.display = "none";
+        return true;
+
+    }
+    function checktenanh33() {
+        var anhdaidien = document.getElementById("TenAnh3");
+        if (anhdaidien.value == "") {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("tenanhError3").style.display = "block";
+            return false;
+        }
+        anhdaidien.classList.remove("is-invalid");
+        document.getElementById("tenanhError3").style.display = "none";
+        return true;
+    }
+
+
+    function checkhinhanh3() {
+        var hinhanh3 = document.getElementById("HinhAnh3");
+        if (hinhanh3.value != "") {
+            //hinhanh1.classList.remove("is-invalid");
+            //document.getElementById("AnhError").style.display = "none";
+
+            var anh = hinhanh3.value.split(/[\\|/]/);
+            var anhchinh = anh[anh.length - 1];
+            //anhcuoi = anhchinh;
+            var image = document.getElementById('Anh3');
+            var danhmuc = document.getElementById('DanhMuc');
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/LuuAnhVaoFoderKhiChonAnh",
+                data: { anhchinh: anhchinh + "\\" + checkdanhmuc(danhmuc.value) },
+                success: function (response) {
+                    image.style.display = "block";
+                    image.src = "/Chicken/images/ThucDon/" + checkdanhmuc(danhmuc.value) + "/" + anhchinh;
+                   
+                }
+            });
+            hinhanh3.classList.remove("is-invalid");
+            document.getElementById("hinhanhError3").style.display = "none";
+            return true;
+        }
+        else {
+            hinhanh3.classList.add("is-invalid");
+            document.getElementById("hinhanhError3").style.display = "block";
+            return false;
+        }
+
+    }
+    function checkanhchietiet3() {
+        var anhdaidien = document.getElementById("HinhAnh3");
+        if (anhdaidien.value == "") {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("hinhanhError3").style.display = "block";
+            return false;
+        }
+        anhdaidien.classList.remove("is-invalid");
+        document.getElementById("hinhanhError3").style.display = "none";
+        return true;
+    }
+</script>
+
+    
+
+<script>
+
+
+    function checktenmonan() 
+    {
+        var tenmonan = document.getElementById("TenMonAn");
+        if (tenmonan.value == "") {
+            tenmonan.classList.add("is-invalid");
+            document.getElementById("tenmonanError1").style.display = "block";
+            return false;
+        }
+        tenmonan.classList.remove("is-invalid");
+        document.getElementById("tenmonanError1").style.display = "none";
+        return true;
+
+    }
+
+    function checkdongia() 
+    {
+        var dongia = document.getElementById("DonGia");
+        if (dongia.value == "") {
+            dongia.classList.add("is-invalid");
+            document.getElementById("dongiaError1").style.display = "block";
+            return false;
+        }
+        dongia.classList.remove("is-invalid");
+        document.getElementById("dongiaError1").style.display = "none";
+        return true;
+
+    }
+
+    function checkmota() {
+        var mota = document.getElementById("MoTa");
+        if (mota.value == "") {
+            mota.classList.add("is-invalid");
+            document.getElementById("motaError1").style.display = "block";
+            return false;
+        }
+        mota.classList.remove("is-invalid");
+        document.getElementById("motaError1").style.display = "none";
+        return true;
+
+    } 
+    
+
+    function checkanhdaidien2(){
+        var anhdaidien = document.getElementById("AnhDaiDien");
+        if (anhdaidien.value == "") {
+            anhdaidien.classList.add("is-invalid");
+            document.getElementById("anhdaidienError1").style.display = "block";
+            return false;
+        }
+        anhdaidien.classList.remove("is-invalid");
+        document.getElementById("anhdaidienError1").style.display = "none";
+        return true;
+    }
+
+    function checksoluong() {
+        var soluong = document.getElementById("SoLuong");
+        if (soluong.value == "") {
+            soluong.classList.add("is-invalid");
+            document.getElementById("soluongError1").style.display = "block";
+            return false;
+        }
+        soluong.classList.remove("is-invalid");
+        document.getElementById("soluongError1").style.display = "none";
+        return true;
+    }
+
+
+</script>
+
+
+
+<script type="text/javascript">
+    //Hàm thêm mới khách hàng . dùng $.ajax thwucj hiện method httpPost
+
+    function ThemMonAn() {
+
+        var mamonan = document.getElementById("MaMonAn").value;
+        var tenmonan = document.getElementById("TenMonAn").value;
+        var dongia = document.getElementById("DonGia").value;
+        var mota = document.getElementById("MoTa").value;
+        var trangthai = document.getElementById("TrangThai").value;
+        var anhdaidien = document.getElementById("AnhChinh");
+        var soluong = document.getElementById("SoLuong").value;
+        var danhmuc = document.getElementById("DanhMuc").value;
+
+
+
+        var maanh1 = document.getElementById("MaAnh1").value;
+        var tenanh1 = document.getElementById("TenAnh1").value;
+        var hinhanh1 = document.getElementById("Anh1");
+
+        var maanh2 = document.getElementById("MaAnh2").value;
+        var tenanh2 = document.getElementById("TenAnh2").value;
+        var hinhanh2 = document.getElementById("Anh2");
+
+        var maanh3 = document.getElementById("MaAnh3").value;
+        var tenanh3 = document.getElementById("TenAnh3").value;
+        var hinhanh3 = document.getElementById("Anh3");
+
+
+        var anh1 = hinhanh1.src.split(/[\\|/]/);
+        var anhchinh1 = anh1[anh1.length - 1];
+
+        var anh2 = hinhanh2.src.split(/[\\|/]/);
+        var anhchinh2 = anh2[anh2.length - 1];
+
+        var anh3 = hinhanh3.src.split(/[\\|/]/);
+        var anhchinh3 = anh3[anh3.length - 1];
+
+        var anhchinh = anhdaidien.src.split(/[\\|/]/);
+        var anhdaidien2 = anhchinh[anhchinh.length - 1];
+      
+
+        
+        var url = 'https://localhost:7067/api/monanapi' 
+            + '?MaMonAn=' + mamonan
+            + '&TenMonAn='+ tenmonan
+            + '&DonGia=' + dongia
+            + '&MoTa=' + mota
+            + '&TrangThai=' + trangthai
+            + '&AnhDaiDien=' + anhdaidien2
+            + '&SoLuong=' + soluong
+            + '&MaDanhMuc=' + danhmuc
+
+
+            + '&maanh1=' + maanh1
+            + '&tenanh1=' + tenanh1
+            + '&hinhanh1=' + anhchinh1
+
+            + '&maanh2=' + maanh2
+            + '&tenanh2=' + tenanh2
+            + '&hinhanh2=' + anhchinh2
+
+            + '&maanh3=' + maanh3
+            + '&tenanh3=' + tenanh3
+            + '&hinhanh3=' + anhchinh3;
+
+
+        $.ajax({
+
+            url: url,
+            method: 'POST',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                
+                checktenmonan();
+                checkdongia();
+                checkmota();
+                checksoluong();
+                checkanhdaidien2();
+                
+
+                checktenanh1();
+                checktenanh2();
+                checktenanh3();
+
+                checktenanh11();
+                checktenanh22();
+                checktenanh33();
+
+                checkanhchietiet1();
+                checkanhchietiet2();
+                checkanhchietiet3();
+
+
+                //checkanhdaidien();
+                //checkhinhanh1();
+                //checkhinhanh2();
+                //checkhinhanh3();
+
+            },
+            success: function (reponse) {
+
+                if (checktenanh1() == true
+                    && checktenanh2() == true
+                    && checktenanh3() == true
+
+                    && checktenmonan() == true
+                    && checkdongia() == true
+                    && checkmota() == true
+                    && checksoluong() == true
+
+                    //&& checktenanh11() == true
+                    //&& checktenanh22() == true
+                    //&& checktenanh33() == true
+                    //&& checkanhdaidien() == true
+                    )
+
+                {
+                    alert("Thêm mới thành công");
+                    window.location.href = 'https://localhost:7067/admin/monantheodanhmuc?madanhmuc=' + danhmuc;
+                }
+                else
+                {
+                    alert("Bạn chưa nhập đầy đủ thông tin");
+                }
+                    
+
+            }
+        });
+    }
+
+
+</script>

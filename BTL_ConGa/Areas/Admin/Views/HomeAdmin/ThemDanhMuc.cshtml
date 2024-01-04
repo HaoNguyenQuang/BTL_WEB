@@ -1,0 +1,68 @@
+﻿@model BTL_ConGa.Models.DanhMuc
+
+@{
+    ViewData["Title"] = "ThemDanhMuc";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h1>Thêm Danh Mục</h1>
+<script type="text/javascript">
+
+
+    function ThemDanhMuc() {
+        var MaDanhMuc = document.getElementById("MaDanhMuc").value;
+        var TenDanhMuc = document.getElementById("TenDanhMuc").value;
+        var url = 'https://localhost:7067/api/danhmucapi?MaDanhMuc=' + MaDanhMuc
+            + '&TenDanhMuc=' + TenDanhMuc;
+        $.ajax({
+            url: url,
+            method: 'POST',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("Thêm mới không thành công")
+            },
+            success: function (reponse) {
+                alert("Thêm mới thành công");
+                window.location.href = 'https://localhost:7067/admin/danhmucmonan';
+            }
+        });
+    }
+
+</script>
+    <h4>Danh Mục</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="ThemDanhMuc">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    @{
+                        int lastid = ViewBag.lastId;
+                        string id = "";
+                        if (lastid >= 10)
+                            id = "DM" + (lastid + 1).ToString();
+                        else
+                            id = "DM0" + (lastid + 1).ToString();
+                    }
+                    <label class="control-label">Mã Danh Mục</label>
+                    <input id="MaDanhMuc" asp-for="MaDanhMuc" class="form-control" disabled value="@id" />
+                    <span asp-validation-for="MaDanhMuc" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label  class="control-label">Tên Danh Mục</label>
+                    <input id="TenDanhMuc" asp-for="TenDanhMuc" class="form-control" />
+                    <span asp-validation-for="TenDanhMuc" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" onclick="ThemDanhMuc()" value="Thêm danh mục" class="btn btn-primary" />
+                    <a class="btn btn-primary" asp-action="DanhMucMonAn">Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
